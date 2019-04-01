@@ -1,0 +1,2665 @@
+﻿[
+	{
+		"Display_Name": "ActiveX Installer (AxInstSV)",
+		"Service_Name": "AxInstSV",
+		"DEFAULT_Windows_10_Home": "Manual",
+		"DEFAULT_Windows_10_Pro": "Manual",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "AllJoyn Router Service",
+		"Service_Name": "AJRouter",
+		"DEFAULT_Windows_10_Home": "Manual (Trigger Start)",
+		"DEFAULT_Windows_10_Pro": "Manual (Trigger Start)",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Disabled *",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "App Readiness",
+		"Service_Name": "AppReadiness",
+		"DEFAULT_Windows_10_Home": "Manual",
+		"DEFAULT_Windows_10_Pro": "Manual",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Application Host Helper Service **",
+		"Service_Name": "AppHostSvc",
+		"DEFAULT_Windows_10_Home": "Not Installed",
+		"DEFAULT_Windows_10_Pro": "Not Installed",
+		"Safe_Desktop": "Not Installed",
+		"Safe_Mobile": "Not Installed",
+		"Tweaked_Desktop": "Not Installed",
+		"Quick_Notes": "If installed (Automatic"
+	},
+	{
+		"Display_Name": "Application Identity",
+		"Service_Name": "AppIDSvc",
+		"DEFAULT_Windows_10_Home": "Manual (Trigger Start)",
+		"DEFAULT_Windows_10_Pro": "Manual (Trigger Start)",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Application Information",
+		"Service_Name": "Appinfo",
+		"DEFAULT_Windows_10_Home": "Manual (Trigger Start",
+		"DEFAULT_Windows_10_Pro": " Running)",
+		"Safe_Desktop": "Manual (Trigger Start",
+		"Safe_Mobile": " Running)",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": "Manual"
+	},
+	{
+		"Display_Name": "Application Layer Gateway Service",
+		"Service_Name": "ALG",
+		"DEFAULT_Windows_10_Home": "Manual",
+		"DEFAULT_Windows_10_Pro": "Manual",
+		"Safe_Desktop": "Disabled *",
+		"Safe_Mobile": "Disabled *",
+		"Tweaked_Desktop": "Disabled *",
+		"Quick_Notes": "Old functionality no longer needed."
+	},
+	{
+		"Display_Name": "Application Management",
+		"Service_Name": "AppMgmt",
+		"DEFAULT_Windows_10_Home": "Not Available",
+		"DEFAULT_Windows_10_Pro": "Manual",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Disabled *",
+		"Quick_Notes": "Required for Group Policy software management"
+	},
+	{
+		"Display_Name": "AppX Deployment Service (AppXSVC)",
+		"Service_Name": "AppXSVC",
+		"DEFAULT_Windows_10_Home": "Manual",
+		"DEFAULT_Windows_10_Pro": "Manual",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": "Windows Store integration. Cannot be disabled via services.msc"
+	},
+	{
+		"Display_Name": "AssignedAccessManager Service",
+		"Service_Name": "AssignedAccessManagerSvc",
+		"DEFAULT_Windows_10_Home": "Not Available",
+		"DEFAULT_Windows_10_Pro": "Manual",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "ASP.NET State Service **",
+		"Service_Name": "aspnet_state",
+		"DEFAULT_Windows_10_Home": "Not Installed",
+		"DEFAULT_Windows_10_Pro": "Not Installed",
+		"Safe_Desktop": "Not Installed",
+		"Safe_Mobile": "Not Installed",
+		"Tweaked_Desktop": "Not Installed",
+		"Quick_Notes": "If installed: (Manual)"
+	},
+	{
+		"Display_Name": "Auto Time Zone Updater",
+		"Service_Name": "tzautoupdate",
+		"DEFAULT_Windows_10_Home": "Disabled",
+		"DEFAULT_Windows_10_Pro": "Disabled",
+		"Safe_Desktop": "Disabled",
+		"Safe_Mobile": "Disabled",
+		"Tweaked_Desktop": "Disabled",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "AVCTP service",
+		"Service_Name": "BthAvctpSvc",
+		"DEFAULT_Windows_10_Home": "Manual (Trigger Start)",
+		"DEFAULT_Windows_10_Pro": "Manual (Trigger Start)",
+		"Safe_Desktop": "Manual (Trigger Start)",
+		"Safe_Mobile": "Manual (Trigger Start)",
+		"Tweaked_Desktop": "Disabled *",
+		"Quick_Notes": "Do not disable if you are using Bluetooth Audio Device or Wireless Headphones."
+	},
+	{
+		"Display_Name": "Background Intelligent Transfer Service",
+		"Service_Name": "BITS",
+		"DEFAULT_Windows_10_Home": "Manual or Automatic (Delayed Start",
+		"DEFAULT_Windows_10_Pro": " Running)",
+		"Safe_Desktop": "Manual or Automatic (Delayed Start",
+		"Safe_Mobile": " Running)",
+		"Tweaked_Desktop": "Automatic (Delayed Start)",
+		"Quick_Notes": "Automatic (Delayed Start)"
+	},
+	{
+		"Display_Name": "Background Tasks Infrastructure Service",
+		"Service_Name": "BrokerInfrastructure",
+		"DEFAULT_Windows_10_Home": "Automatic (Running)",
+		"DEFAULT_Windows_10_Pro": "Automatic (Running)",
+		"Safe_Desktop": "Automatic",
+		"Safe_Mobile": "Automatic",
+		"Tweaked_Desktop": "Automatic",
+		"Quick_Notes": "Cannot be disabled via services.msc"
+	},
+	{
+		"Display_Name": "Base Filtering Engine",
+		"Service_Name": "BFE",
+		"DEFAULT_Windows_10_Home": "Automatic (Running)",
+		"DEFAULT_Windows_10_Pro": "Automatic (Running)",
+		"Safe_Desktop": "Automatic",
+		"Safe_Mobile": "Automatic",
+		"Tweaked_Desktop": "Automatic",
+		"Quick_Notes": "Do not disable due to Windows Firewall integration."
+	},
+	{
+		"Display_Name": "BitLocker Drive Encryption Service",
+		"Service_Name": "BDESVC",
+		"DEFAULT_Windows_10_Home": "Manual (Trigger Start)",
+		"DEFAULT_Windows_10_Pro": "Manual (Trigger Start)",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": "Do not disable if using storage encryption."
+	},
+	{
+		"Display_Name": "Block Level Backup Engine Service",
+		"Service_Name": "wbengine",
+		"DEFAULT_Windows_10_Home": "Manual",
+		"DEFAULT_Windows_10_Pro": "Manual",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": "Used by Windows Backup"
+	},
+	{
+		"Display_Name": "Bluetooth Audio Gateway Service",
+		"Service_Name": "BTAGService",
+		"DEFAULT_Windows_10_Home": "Manual (Trigger Start)",
+		"DEFAULT_Windows_10_Pro": "Manual (Trigger Start)",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Disabled *",
+		"Quick_Notes": "New. Wireless headsets."
+	},
+	{
+		"Display_Name": "Bluetooth Support Service",
+		"Service_Name": "bthserv",
+		"DEFAULT_Windows_10_Home": "Manual (Trigger Start)",
+		"DEFAULT_Windows_10_Pro": "Manual (Trigger Start)",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Disabled *",
+		"Quick_Notes": "Disable if no requirement for Bluetooth devices is desired."
+	},
+	{
+		"Display_Name": "Bluetooth User Support Service_?????",
+		"Service_Name": "BluetoothUserService_?????",
+		"DEFAULT_Windows_10_Home": "Manual (Trigger Start)",
+		"DEFAULT_Windows_10_Pro": "Manual (Trigger Start)",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": "New"
+	},
+	{
+		"Display_Name": "BranchCache",
+		"Service_Name": "PeerDistSvc",
+		"DEFAULT_Windows_10_Home": "Not Available",
+		"DEFAULT_Windows_10_Pro": "Manual",
+		"Safe_Desktop": "Disabled *",
+		"Safe_Mobile": "Disabled *",
+		"Tweaked_Desktop": "Disabled *",
+		"Quick_Notes": "Used by Windows Update for download sharing."
+	},
+	{
+		"Display_Name": "Capability Access Manager Service",
+		"Service_Name": "camsvc",
+		"DEFAULT_Windows_10_Home": "Manual",
+		"DEFAULT_Windows_10_Pro": "Manual",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "CaptureService_?????",
+		"Service_Name": "CaptureService_?????",
+		"DEFAULT_Windows_10_Home": "Not Available",
+		"DEFAULT_Windows_10_Pro": "Manual",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Disabled *",
+		"Quick_Notes": "New. OneCore Capture Service."
+	},
+	{
+		"Display_Name": "Certificate Propagation",
+		"Service_Name": "CertPropSvc",
+		"DEFAULT_Windows_10_Home": "Manual (Trigger Start)",
+		"DEFAULT_Windows_10_Pro": "Manual (Trigger Start)",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Disabled *",
+		"Quick_Notes": "Used with Smart Card login. No harm in keeping the default Manual mode."
+	},
+	{
+		"Display_Name": "Claims to Windows Token Service **",
+		"Service_Name": "c2wts",
+		"DEFAULT_Windows_10_Home": "Not Installed",
+		"DEFAULT_Windows_10_Pro": "Not Installed",
+		"Safe_Desktop": "Not Installed",
+		"Safe_Mobile": "Not Installed",
+		"Tweaked_Desktop": "Not Installed",
+		"Quick_Notes": "If installed: (Manual)"
+	},
+	{
+		"Display_Name": "Client for NFS",
+		"Service_Name": "NfsClnt",
+		"DEFAULT_Windows_10_Home": "Not Available",
+		"DEFAULT_Windows_10_Pro": "Not Available",
+		"Safe_Desktop": "Disabled *",
+		"Safe_Mobile": "Disabled *",
+		"Tweaked_Desktop": "Disabled *",
+		"Quick_Notes": "Network File System Client available in Education/Enterprise versions."
+	},
+	{
+		"Display_Name": "Client License Service (ClipSVC)",
+		"Service_Name": "ClipSVC",
+		"DEFAULT_Windows_10_Home": "Manual (Trigger Start)",
+		"DEFAULT_Windows_10_Pro": "Manual (Trigger Start)",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": "Cannot be disabled via services.msc"
+	},
+	{
+		"Display_Name": "CNG Key Isolation",
+		"Service_Name": "KeyIso",
+		"DEFAULT_Windows_10_Home": "Manual (Trigger Start",
+		"DEFAULT_Windows_10_Pro": " Running)",
+		"Safe_Desktop": "Manual (Trigger Start",
+		"Safe_Mobile": " Running)",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": "Manual"
+	},
+	{
+		"Display_Name": "COM+ Event System",
+		"Service_Name": "EventSystem",
+		"DEFAULT_Windows_10_Home": "Automatic (Running)",
+		"DEFAULT_Windows_10_Pro": "Automatic (Running)",
+		"Safe_Desktop": "Automatic",
+		"Safe_Mobile": "Automatic",
+		"Tweaked_Desktop": "Automatic",
+		"Quick_Notes": "Do not disable."
+	},
+	{
+		"Display_Name": "COM+ System Application",
+		"Service_Name": "COMSysApp",
+		"DEFAULT_Windows_10_Home": "Manual",
+		"DEFAULT_Windows_10_Pro": "Manual",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": "Do not disable."
+	},
+	{
+		"Display_Name": "Computer Browser",
+		"Service_Name": "Browser",
+		"DEFAULT_Windows_10_Home": "Manual (Trigger Start)",
+		"DEFAULT_Windows_10_Pro": "Manual (Trigger Start)",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": "Network discovery of systems on local network."
+	},
+	{
+		"Display_Name": "Connected Device Platform Service",
+		"Service_Name": "CDPSvc",
+		"DEFAULT_Windows_10_Home": "Automatic (Delayed Start",
+		"DEFAULT_Windows_10_Pro": " Trigger Start)",
+		"Safe_Desktop": "Automatic (Delayed Start",
+		"Safe_Mobile": " Trigger Start)",
+		"Tweaked_Desktop": "Automatic (Delayed Start)",
+		"Quick_Notes": "Automatic (Delayed Start)"
+	},
+	{
+		"Display_Name": "Connected Devices Platform User Service_?????",
+		"Service_Name": "CDPUserSvc_?????",
+		"DEFAULT_Windows_10_Home": "Automatic (Running)",
+		"DEFAULT_Windows_10_Pro": "Automatic (Running)",
+		"Safe_Desktop": "Automatic",
+		"Safe_Mobile": "Automatic",
+		"Tweaked_Desktop": "Automatic",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Connected User Experiences and Telemetry",
+		"Service_Name": "DiagTrack",
+		"DEFAULT_Windows_10_Home": "Automatic (Running)",
+		"DEFAULT_Windows_10_Pro": "Automatic (Running)",
+		"Safe_Desktop": "Automatic",
+		"Safe_Mobile": "Automatic",
+		"Tweaked_Desktop": "Automatic",
+		"Quick_Notes": "Feedback and Diagnostics."
+	},
+	{
+		"Display_Name": "Contact Data_?????",
+		"Service_Name": "PimIndexMaintenanceSvc_?????",
+		"DEFAULT_Windows_10_Home": "Manual",
+		"DEFAULT_Windows_10_Pro": "Manual",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": "Cannot be disabled via services.msc"
+	},
+	{
+		"Display_Name": "CoreMessaging",
+		"Service_Name": "CoreMessagingRegistrar",
+		"DEFAULT_Windows_10_Home": "Automatic (Running)",
+		"DEFAULT_Windows_10_Pro": "Automatic (Running)",
+		"Safe_Desktop": "Automatic",
+		"Safe_Mobile": "Automatic",
+		"Tweaked_Desktop": "Automatic",
+		"Quick_Notes": "Cannot be disabled via services.msc"
+	},
+	{
+		"Display_Name": "Credential Manager",
+		"Service_Name": "VaultSvc",
+		"DEFAULT_Windows_10_Home": "Manual",
+		"DEFAULT_Windows_10_Pro": "Manual",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": "Do not disable."
+	},
+	{
+		"Display_Name": "Cryptographic Services",
+		"Service_Name": "CryptSvc",
+		"DEFAULT_Windows_10_Home": "Automatic (Running)",
+		"DEFAULT_Windows_10_Pro": "Automatic (Running)",
+		"Safe_Desktop": "Automatic",
+		"Safe_Mobile": "Automatic",
+		"Tweaked_Desktop": "Automatic",
+		"Quick_Notes": "Do not disable."
+	},
+	{
+		"Display_Name": "Data Sharing Service",
+		"Service_Name": "DsSvc",
+		"DEFAULT_Windows_10_Home": "Manual (Trigger Start)",
+		"DEFAULT_Windows_10_Pro": "Manual (Trigger Start)",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Data Usage",
+		"Service_Name": "DusmSvc",
+		"DEFAULT_Windows_10_Home": "Automatic (Running)",
+		"DEFAULT_Windows_10_Pro": "Automatic (Running)",
+		"Safe_Desktop": "Automatic",
+		"Safe_Mobile": "Automatic",
+		"Tweaked_Desktop": "Automatic",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "DCOM Server Process Launcher",
+		"Service_Name": "DcomLaunch",
+		"DEFAULT_Windows_10_Home": "Automatic (Running)",
+		"DEFAULT_Windows_10_Pro": "Automatic (Running)",
+		"Safe_Desktop": "Automatic",
+		"Safe_Mobile": "Automatic",
+		"Tweaked_Desktop": "Automatic",
+		"Quick_Notes": "Cannot be disabled via services.msc"
+	},
+	{
+		"Display_Name": "Delivery Optimization",
+		"Service_Name": "DoSvc",
+		"DEFAULT_Windows_10_Home": "Automatic (Delayed Start)",
+		"DEFAULT_Windows_10_Pro": "Automatic (Delayed Start)",
+		"Safe_Desktop": "Automatic (Delayed Start)",
+		"Safe_Mobile": "Automatic (Delayed Start)",
+		"Tweaked_Desktop": "Automatic (Delayed Start)",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Device Association Service",
+		"Service_Name": "DeviceAssociationService",
+		"DEFAULT_Windows_10_Home": "Manual (Trigger Start)",
+		"DEFAULT_Windows_10_Pro": "Manual (Trigger Start)",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Device Install Service",
+		"Service_Name": "DeviceInstall",
+		"DEFAULT_Windows_10_Home": "Manual (Trigger Start)",
+		"DEFAULT_Windows_10_Pro": "Manual (Trigger Start)",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Device Management Enrollment Service",
+		"Service_Name": "DmEnrollmentSvc",
+		"DEFAULT_Windows_10_Home": "Manual",
+		"DEFAULT_Windows_10_Pro": "Manual",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Device Setup Manager",
+		"Service_Name": "DsmSVC",
+		"DEFAULT_Windows_10_Home": "Manual (Trigger Start)",
+		"DEFAULT_Windows_10_Pro": "Manual (Trigger Start)",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "DevicePicker_?????",
+		"Service_Name": "DevicePickerUserSvc_?????",
+		"DEFAULT_Windows_10_Home": "Manual",
+		"DEFAULT_Windows_10_Pro": "Manual",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": "New. Cannot be disabled via services.msc"
+	},
+	{
+		"Display_Name": "DevicesFlow_?????",
+		"Service_Name": "DevicesFlowUserSvc_?????",
+		"DEFAULT_Windows_10_Home": "Manual",
+		"DEFAULT_Windows_10_Pro": "Manual",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": "Cannot be disabled via services.msc"
+	},
+	{
+		"Display_Name": "DevQuery Background Discovery Broker",
+		"Service_Name": "DevQueryBroker",
+		"DEFAULT_Windows_10_Home": "Manual (Trigger Start)",
+		"DEFAULT_Windows_10_Pro": "Manual (Trigger Start)",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "DHCP Client",
+		"Service_Name": "Dhcp",
+		"DEFAULT_Windows_10_Home": "Automatic (Running)",
+		"DEFAULT_Windows_10_Pro": "Automatic (Running)",
+		"Safe_Desktop": "Automatic",
+		"Safe_Mobile": "Automatic",
+		"Tweaked_Desktop": "Automatic",
+		"Quick_Notes": "Do not disable."
+	},
+	{
+		"Display_Name": "Diagnostic Execution Service",
+		"Service_Name": "diagsvc",
+		"DEFAULT_Windows_10_Home": "Manual (Trigger Start)",
+		"DEFAULT_Windows_10_Pro": "Manual (Trigger Start)",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Diagnostic Policy Service",
+		"Service_Name": "DPS",
+		"DEFAULT_Windows_10_Home": "Automatic (Running)",
+		"DEFAULT_Windows_10_Pro": "Automatic (Running)",
+		"Safe_Desktop": "Automatic",
+		"Safe_Mobile": "Automatic",
+		"Tweaked_Desktop": "Automatic",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Diagnostic Service Host",
+		"Service_Name": "WdiServiceHost",
+		"DEFAULT_Windows_10_Home": "Manual (Running)",
+		"DEFAULT_Windows_10_Pro": "Manual (Running)",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Diagnostic System Host",
+		"Service_Name": "WdiSystemHost",
+		"DEFAULT_Windows_10_Home": "Manual",
+		"DEFAULT_Windows_10_Pro": "Manual",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Distributed Link Tracking Client",
+		"Service_Name": "TrkWks",
+		"DEFAULT_Windows_10_Home": "Automatic (Running)",
+		"DEFAULT_Windows_10_Pro": "Automatic (Running)",
+		"Safe_Desktop": "Automatic",
+		"Safe_Mobile": "Automatic",
+		"Tweaked_Desktop": "Automatic",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Distributed Transaction Coordinator",
+		"Service_Name": "MSDTC",
+		"DEFAULT_Windows_10_Home": "Manual",
+		"DEFAULT_Windows_10_Pro": "Manual",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "dmwappushsvc",
+		"Service_Name": "dmwappushsvc",
+		"DEFAULT_Windows_10_Home": "Manual (Trigger Start)",
+		"DEFAULT_Windows_10_Pro": "Manual (Trigger Start)",
+		"Safe_Desktop": "Disabled *",
+		"Safe_Mobile": "Disabled *",
+		"Tweaked_Desktop": "Disabled *",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "DNS Client",
+		"Service_Name": "Dnscache",
+		"DEFAULT_Windows_10_Home": "Automatic (Trigger Start",
+		"DEFAULT_Windows_10_Pro": " Running)",
+		"Safe_Desktop": "Automatic (Trigger Start",
+		"Safe_Mobile": " Running)",
+		"Tweaked_Desktop": "Automatic",
+		"Quick_Notes": "Automatic"
+	},
+	{
+		"Display_Name": "Downloaded Maps Manager",
+		"Service_Name": "MapsBroker",
+		"DEFAULT_Windows_10_Home": "Automatic (Delayed Start)",
+		"DEFAULT_Windows_10_Pro": "Automatic (Delayed Start)",
+		"Safe_Desktop": "Disabled *",
+		"Safe_Mobile": "Disabled *",
+		"Tweaked_Desktop": "Disabled *",
+		"Quick_Notes": "I do not use Windows/Bing maps. Google for the win here."
+	},
+	{
+		"Display_Name": "DS Role Server **",
+		"Service_Name": "DsRoleSvc",
+		"DEFAULT_Windows_10_Home": "Not Available",
+		"DEFAULT_Windows_10_Pro": "Not Installed",
+		"Safe_Desktop": "Not installed",
+		"Safe_Mobile": "Not installed",
+		"Tweaked_Desktop": "Not installed",
+		"Quick_Notes": "If installed: (Manual)"
+	},
+	{
+		"Display_Name": "Embedded Mode",
+		"Service_Name": "embeddedmode",
+		"DEFAULT_Windows_10_Home": "Manual (Trigger Start)",
+		"DEFAULT_Windows_10_Pro": "Manual (Trigger Start)",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Encrypting File System (EFS)",
+		"Service_Name": "EFS",
+		"DEFAULT_Windows_10_Home": "Manual (Trigger Start)",
+		"DEFAULT_Windows_10_Pro": "Manual (Trigger Start)",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": "Do not disable."
+	},
+	{
+		"Display_Name": "Enterprise App Management Service",
+		"Service_Name": "EntAppSvc",
+		"DEFAULT_Windows_10_Home": "Manual",
+		"DEFAULT_Windows_10_Pro": "Manual",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": "Cannot be disabled via services.msc"
+	},
+	{
+		"Display_Name": "Extensible Authentication Protocol Service",
+		"Service_Name": "EapHost",
+		"DEFAULT_Windows_10_Home": "Manual",
+		"DEFAULT_Windows_10_Pro": "Manual",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Fax **",
+		"Service_Name": "Fax",
+		"DEFAULT_Windows_10_Home": "Manual",
+		"DEFAULT_Windows_10_Pro": "Manual",
+		"Safe_Desktop": "Uninstalled *",
+		"Safe_Mobile": "Uninstalled *",
+		"Tweaked_Desktop": "Uninstalled *",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "File History Service",
+		"Service_Name": "fhsvc",
+		"DEFAULT_Windows_10_Home": "Manual (Trigger Start)",
+		"DEFAULT_Windows_10_Pro": "Manual (Trigger Start)",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": "Used by Windows Backup."
+	},
+	{
+		"Display_Name": "Function Discovery Provider Host",
+		"Service_Name": "fdPHost",
+		"DEFAULT_Windows_10_Home": "Manual",
+		"DEFAULT_Windows_10_Pro": "Manual",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Function Discovery Resource Publication",
+		"Service_Name": "FDResPub",
+		"DEFAULT_Windows_10_Home": "Manual (Running)",
+		"DEFAULT_Windows_10_Pro": "Manual (Running)",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "GameDVR and Broadcast User Service_?????",
+		"Service_Name": "BcastDVRUserService_?????",
+		"DEFAULT_Windows_10_Home": "Manual (Trigger Start)",
+		"DEFAULT_Windows_10_Pro": "Manual (Trigger Start)",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": "New. Cannot be disabled via services.msc"
+	},
+	{
+		"Display_Name": "Geolocation Service",
+		"Service_Name": "lfsvc",
+		"DEFAULT_Windows_10_Home": "Manual (Trigger Start",
+		"DEFAULT_Windows_10_Pro": " Running)",
+		"Safe_Desktop": "Manual (Trigger Start",
+		"Safe_Mobile": " Running)",
+		"Tweaked_Desktop": "Disabled *",
+		"Quick_Notes": "Disabled *"
+	},
+	{
+		"Display_Name": "GraphicsPerfSvc",
+		"Service_Name": "GraphicsPerfSvc",
+		"DEFAULT_Windows_10_Home": "Manual (Trigger Start)",
+		"DEFAULT_Windows_10_Pro": "Manual (Trigger Start)",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Group Policy Client",
+		"Service_Name": "gpsvc",
+		"DEFAULT_Windows_10_Home": "Automatic (Trigger Start)",
+		"DEFAULT_Windows_10_Pro": "Automatic (Trigger Start)",
+		"Safe_Desktop": "Automatic",
+		"Safe_Mobile": "Automatic",
+		"Tweaked_Desktop": "Automatic",
+		"Quick_Notes": "Cannot be disabled via services.msc"
+	},
+	{
+		"Display_Name": "Host Network Service **",
+		"Service_Name": "hns",
+		"DEFAULT_Windows_10_Home": "Not Available",
+		"DEFAULT_Windows_10_Pro": "Not Installed",
+		"Safe_Desktop": "Not Installed",
+		"Safe_Mobile": "Not Installed",
+		"Tweaked_Desktop": "Not Installed",
+		"Quick_Notes": "If installed: (Manual)"
+	},
+	{
+		"Display_Name": "Human Interface Device Service",
+		"Service_Name": "hidserv",
+		"DEFAULT_Windows_10_Home": "Manual (Trigger Start)",
+		"DEFAULT_Windows_10_Pro": "Manual (Trigger Start)",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": "Manufacture function keys generally on laptops for volume"
+	},
+	{
+		"Display_Name": "HV Host Service",
+		"Service_Name": "HvHost",
+		"DEFAULT_Windows_10_Home": "Manual (Trigger Start)",
+		"DEFAULT_Windows_10_Pro": "Manual (Trigger Start)",
+		"Safe_Desktop": "Disabled *",
+		"Safe_Mobile": "Disabled *",
+		"Tweaked_Desktop": "Disabled *",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Hyper-V Data Exchange Service",
+		"Service_Name": "vmickvpexchange",
+		"DEFAULT_Windows_10_Home": "Manual (Trigger Start)",
+		"DEFAULT_Windows_10_Pro": "Manual (Trigger Start)",
+		"Safe_Desktop": "Disabled *",
+		"Safe_Mobile": "Disabled *",
+		"Tweaked_Desktop": "Disabled *",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Hyper-V Guest Service Interface",
+		"Service_Name": "vmicguestinterface",
+		"DEFAULT_Windows_10_Home": "Manual (Trigger Start)",
+		"DEFAULT_Windows_10_Pro": "Manual (Trigger Start)",
+		"Safe_Desktop": "Disabled *",
+		"Safe_Mobile": "Disabled *",
+		"Tweaked_Desktop": "Disabled *",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Hyper-V Guest Shutdown Service",
+		"Service_Name": "vmicshutdown",
+		"DEFAULT_Windows_10_Home": "Manual (Trigger Start)",
+		"DEFAULT_Windows_10_Pro": "Manual (Trigger Start)",
+		"Safe_Desktop": "Disabled *",
+		"Safe_Mobile": "Disabled *",
+		"Tweaked_Desktop": "Disabled *",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Hyper-V Heartbeat Service",
+		"Service_Name": "vmicheartbeat",
+		"DEFAULT_Windows_10_Home": "Manual (Trigger Start)",
+		"DEFAULT_Windows_10_Pro": "Manual (Trigger Start)",
+		"Safe_Desktop": "Disabled *",
+		"Safe_Mobile": "Disabled *",
+		"Tweaked_Desktop": "Disabled *",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Hyper-V Host Compute Service **",
+		"Service_Name": "vmcompute",
+		"DEFAULT_Windows_10_Home": "Not Available",
+		"DEFAULT_Windows_10_Pro": "Not Installed",
+		"Safe_Desktop": "Not Installed",
+		"Safe_Mobile": "Not Installed",
+		"Tweaked_Desktop": "Not Installed",
+		"Quick_Notes": "If installed: (Manual"
+	},
+	{
+		"Display_Name": "Hyper-V PowerShell Direct Service",
+		"Service_Name": "vmicvmsession",
+		"DEFAULT_Windows_10_Home": "Manual (Trigger Start)",
+		"DEFAULT_Windows_10_Pro": "Manual (Trigger Start)",
+		"Safe_Desktop": "Disabled *",
+		"Safe_Mobile": "Disabled *",
+		"Tweaked_Desktop": "Disabled *",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Hyper-V Remote Desktop Virtualization Service",
+		"Service_Name": "vmicrdv",
+		"DEFAULT_Windows_10_Home": "Manual (Trigger Start)",
+		"DEFAULT_Windows_10_Pro": "Manual (Trigger Start)",
+		"Safe_Desktop": "Disabled *",
+		"Safe_Mobile": "Disabled *",
+		"Tweaked_Desktop": "Disabled *",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Hyper-V Time Synchronization Service",
+		"Service_Name": "vmictimesync",
+		"DEFAULT_Windows_10_Home": "Manual (Trigger Start)",
+		"DEFAULT_Windows_10_Pro": "Manual (Trigger Start)",
+		"Safe_Desktop": "Disabled *",
+		"Safe_Mobile": "Disabled *",
+		"Tweaked_Desktop": "Disabled *",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Hyper-V Virtual Machine Management **",
+		"Service_Name": "vmms",
+		"DEFAULT_Windows_10_Home": "Not Available",
+		"DEFAULT_Windows_10_Pro": "Not Installed (Automatic",
+		"Safe_Desktop": " Running)",
+		"Safe_Mobile": "Not Installed",
+		"Tweaked_Desktop": "Not Installed",
+		"Quick_Notes": "Not Installed"
+	},
+	{
+		"Display_Name": "Hyper-V Volume Shadow Copy Requestor",
+		"Service_Name": "vmicvss",
+		"DEFAULT_Windows_10_Home": "Manual (Trigger Start)",
+		"DEFAULT_Windows_10_Pro": "Manual (Trigger Start)",
+		"Safe_Desktop": "Disabled *",
+		"Safe_Mobile": "Disabled *",
+		"Tweaked_Desktop": "Disabled *",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "IIS Admin Service **",
+		"Service_Name": "IISADMIN",
+		"DEFAULT_Windows_10_Home": "Not Installed (Automatic",
+		"DEFAULT_Windows_10_Pro": " Running)",
+		"Safe_Desktop": "Not Installed (Automatic",
+		"Safe_Mobile": " Running)",
+		"Tweaked_Desktop": "Not Installed",
+		"Quick_Notes": "Not Installed"
+	},
+	{
+		"Display_Name": "IKE and AuthIP IPsec Keying Modules",
+		"Service_Name": "IKEEXT",
+		"DEFAULT_Windows_10_Home": "Manual (Trigger Start)",
+		"DEFAULT_Windows_10_Pro": "Manual (Trigger Start)",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Infrared monitor service",
+		"Service_Name": "irmon",
+		"DEFAULT_Windows_10_Home": "Manual",
+		"DEFAULT_Windows_10_Pro": "Manual",
+		"Safe_Desktop": "Disabled *",
+		"Safe_Mobile": "Disabled *",
+		"Tweaked_Desktop": "Disabled *",
+		"Quick_Notes": "File transfer via infrared devices."
+	},
+	{
+		"Display_Name": "Interactive Services Detection",
+		"Service_Name": "UI0Detect",
+		"DEFAULT_Windows_10_Home": "Manual",
+		"DEFAULT_Windows_10_Pro": "Manual",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Internet Connection Sharing (ICS)",
+		"Service_Name": "SharedAccess",
+		"DEFAULT_Windows_10_Home": "Manual (Trigger Start)",
+		"DEFAULT_Windows_10_Pro": "Manual (Trigger Start)",
+		"Safe_Desktop": "Disabled *",
+		"Safe_Mobile": "Disabled *",
+		"Tweaked_Desktop": "Disabled *",
+		"Quick_Notes": "Old service no longer needed."
+	},
+	{
+		"Display_Name": "IP Helper",
+		"Service_Name": "iphlpsvc",
+		"DEFAULT_Windows_10_Home": "Automatic (Running)",
+		"DEFAULT_Windows_10_Pro": "Automatic (Running)",
+		"Safe_Desktop": "Automatic",
+		"Safe_Mobile": "Automatic",
+		"Tweaked_Desktop": "Disabled *",
+		"Quick_Notes": "IPv6 translation."
+	},
+	{
+		"Display_Name": "IP Translation Configuration Service",
+		"Service_Name": "IpxlatCfgSvc",
+		"DEFAULT_Windows_10_Home": "Manual (Trigger Start)",
+		"DEFAULT_Windows_10_Pro": "Manual (Trigger Start)",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Disabled *",
+		"Quick_Notes": "IPv6 translation."
+	},
+	{
+		"Display_Name": "IPsec Policy Agent",
+		"Service_Name": "PolicyAgent",
+		"DEFAULT_Windows_10_Home": "Manual (Trigger Start)",
+		"DEFAULT_Windows_10_Pro": "Manual (Trigger Start)",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "KtmRm for Distributed Transaction Coordinator",
+		"Service_Name": "KtmRm",
+		"DEFAULT_Windows_10_Home": "Manual (Trigger Start)",
+		"DEFAULT_Windows_10_Pro": "Manual (Trigger Start)",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Link-Layer Topology Discovery Mapper",
+		"Service_Name": "lltdsvc",
+		"DEFAULT_Windows_10_Home": "Manual",
+		"DEFAULT_Windows_10_Pro": "Manual",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Local Profile Assistant Service",
+		"Service_Name": "wlpasvc",
+		"DEFAULT_Windows_10_Home": "Manual (Trigger Start)",
+		"DEFAULT_Windows_10_Pro": "Manual (Trigger Start)",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Local Session Manager",
+		"Service_Name": "LSM",
+		"DEFAULT_Windows_10_Home": "Automatic (Running)",
+		"DEFAULT_Windows_10_Pro": "Automatic (Running)",
+		"Safe_Desktop": "Automatic",
+		"Safe_Mobile": "Automatic",
+		"Tweaked_Desktop": "Automatic",
+		"Quick_Notes": "Cannot be disabled via services.msc"
+	},
+	{
+		"Display_Name": "LPD Service **",
+		"Service_Name": "LPDSVC",
+		"DEFAULT_Windows_10_Home": "Not Installed (Automatic",
+		"DEFAULT_Windows_10_Pro": " Running)",
+		"Safe_Desktop": "Not Installed (Automatic",
+		"Safe_Mobile": " Running)",
+		"Tweaked_Desktop": "Not Installed",
+		"Quick_Notes": "Not Installed"
+	},
+	{
+		"Display_Name": "LxssManager **",
+		"Service_Name": "LxssManager",
+		"DEFAULT_Windows_10_Home": "Not Installed (Manual)",
+		"DEFAULT_Windows_10_Pro": "Not Installed (Manual)",
+		"Safe_Desktop": "Not Installed",
+		"Safe_Mobile": "Not Installed",
+		"Tweaked_Desktop": "Not Installed",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Message Queuing **",
+		"Service_Name": "MSMQ",
+		"DEFAULT_Windows_10_Home": "Not Installed (Automatic",
+		"DEFAULT_Windows_10_Pro": " Running)",
+		"Safe_Desktop": "Not Installed (Automatic",
+		"Safe_Mobile": " Running)",
+		"Tweaked_Desktop": "Not Installed",
+		"Quick_Notes": "Not Installed"
+	},
+	{
+		"Display_Name": "Message Queuing Triggers **",
+		"Service_Name": "MSMQTriggers",
+		"DEFAULT_Windows_10_Home": "Not Installed (Automatic",
+		"DEFAULT_Windows_10_Pro": " Running)",
+		"Safe_Desktop": "Not Installed (Automatic",
+		"Safe_Mobile": " Running)",
+		"Tweaked_Desktop": "Not Installed",
+		"Quick_Notes": "Not Installed"
+	},
+	{
+		"Display_Name": "MessagingService_?????",
+		"Service_Name": "MessagingService_?????",
+		"DEFAULT_Windows_10_Home": "Manual (Trigger Start)",
+		"DEFAULT_Windows_10_Pro": "Manual (Trigger Start)",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Microsoft (R) Diagnostics Hub Standard Collector Service",
+		"Service_Name": "diagnosticshub.standardcollector.service",
+		"DEFAULT_Windows_10_Home": "Manual",
+		"DEFAULT_Windows_10_Pro": "Manual",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Microsoft Account Sign-in Assistant",
+		"Service_Name": "wlidsvc",
+		"DEFAULT_Windows_10_Home": "Manual (Trigger Start)",
+		"DEFAULT_Windows_10_Pro": "Manual (Trigger Start)",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": "Running if using MS account to log in to computer."
+	},
+	{
+		"Display_Name": "Microsoft App-V Client",
+		"Service_Name": "AppVClient",
+		"DEFAULT_Windows_10_Home": "Not Available",
+		"DEFAULT_Windows_10_Pro": "Disabled",
+		"Safe_Desktop": "Disabled",
+		"Safe_Mobile": "Disabled",
+		"Tweaked_Desktop": "Disabled",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Microsoft FTP Service **",
+		"Service_Name": "ftpsvc",
+		"DEFAULT_Windows_10_Home": "Not Installed (Automatic",
+		"DEFAULT_Windows_10_Pro": " Running)",
+		"Safe_Desktop": "Not Installed (Automatic",
+		"Safe_Mobile": " Running)",
+		"Tweaked_Desktop": "Not Installed",
+		"Quick_Notes": "Not Installed"
+	},
+	{
+		"Display_Name": "Microsoft iSCSI Initiator Service",
+		"Service_Name": "MSiSCSI",
+		"DEFAULT_Windows_10_Home": "Manual",
+		"DEFAULT_Windows_10_Pro": "Manual",
+		"Safe_Desktop": "Disabled *",
+		"Safe_Mobile": "Disabled *",
+		"Tweaked_Desktop": "Disabled *",
+		"Quick_Notes": "Enable only if iSCSI device connectivity is required (rare for home user)."
+	},
+	{
+		"Display_Name": "Microsoft Keyboard Filter **",
+		"Service_Name": "MsKeyboardFilter",
+		"DEFAULT_Windows_10_Home": "Not Installed (Disabled)",
+		"DEFAULT_Windows_10_Pro": "Not Installed (Disabled)",
+		"Safe_Desktop": "Not Installed",
+		"Safe_Mobile": "Not Installed",
+		"Tweaked_Desktop": "Not Installed",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Microsoft Passport",
+		"Service_Name": "NgcSvc",
+		"DEFAULT_Windows_10_Home": "Manual (Trigger Start)",
+		"DEFAULT_Windows_10_Pro": "Manual (Trigger Start)",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": "Cannot be disabled via services.msc"
+	},
+	{
+		"Display_Name": "Microsoft Passport Container",
+		"Service_Name": "NgcCtnrSvc",
+		"DEFAULT_Windows_10_Home": "Manual (Trigger Start)",
+		"DEFAULT_Windows_10_Pro": "Manual (Trigger Start)",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": "Cannot be disabled via services.msc"
+	},
+	{
+		"Display_Name": "Microsoft Software Shadow Copy Provider",
+		"Service_Name": "swprv",
+		"DEFAULT_Windows_10_Home": "Manual (Runningat boot",
+		"DEFAULT_Windows_10_Pro": " then stops)",
+		"Safe_Desktop": "Manual (Runningat boot",
+		"Safe_Mobile": " then stops)",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": "Manual"
+	},
+	{
+		"Display_Name": "Microsoft Storage Spaces SMP",
+		"Service_Name": "smphost",
+		"DEFAULT_Windows_10_Home": "Manual",
+		"DEFAULT_Windows_10_Pro": "Manual",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": "Probably One Drive functionality."
+	},
+	{
+		"Display_Name": "Microsoft Store Install Service",
+		"Service_Name": "InstallService",
+		"DEFAULT_Windows_10_Home": "Manual",
+		"DEFAULT_Windows_10_Pro": "Manual",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Microsoft Windows SMS Router Service",
+		"Service_Name": "SmsRouter",
+		"DEFAULT_Windows_10_Home": "Manual (Trigger Start)",
+		"DEFAULT_Windows_10_Pro": "Manual (Trigger Start)",
+		"Safe_Desktop": "Disabled *",
+		"Safe_Mobile": "Disabled *",
+		"Tweaked_Desktop": "Disabled *",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "MultiPoint Repair Service **",
+		"Service_Name": "WmsRepair",
+		"DEFAULT_Windows_10_Home": "Not Available",
+		"DEFAULT_Windows_10_Pro": "Not Installed (Automatic",
+		"Safe_Desktop": " Running)",
+		"Safe_Mobile": "Not Installed",
+		"Tweaked_Desktop": "Not Installed",
+		"Quick_Notes": "Not Installed"
+	},
+	{
+		"Display_Name": "MultiPoint Service **",
+		"Service_Name": "Wms",
+		"DEFAULT_Windows_10_Home": "Not Available",
+		"DEFAULT_Windows_10_Pro": "Not Installed (Automatic",
+		"Safe_Desktop": " Running)",
+		"Safe_Mobile": "Not Installed",
+		"Tweaked_Desktop": "Not Installed",
+		"Quick_Notes": "Not Installed"
+	},
+	{
+		"Display_Name": "Natural Authentication",
+		"Service_Name": "NaturalAuthentication",
+		"DEFAULT_Windows_10_Home": "Manual (Trigger Start)",
+		"DEFAULT_Windows_10_Pro": "Manual (Trigger Start)",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Disabled *",
+		"Quick_Notes": "Silly bio-metrics or face recognition login."
+	},
+	{
+		"Display_Name": "Net.Msmq Listener Adapter **",
+		"Service_Name": "NetMsmqActivator",
+		"DEFAULT_Windows_10_Home": "Not Installed (Automatic",
+		"DEFAULT_Windows_10_Pro": " Running)",
+		"Safe_Desktop": "Not Installed (Automatic",
+		"Safe_Mobile": " Running)",
+		"Tweaked_Desktop": "Not Installed",
+		"Quick_Notes": "Not Installed"
+	},
+	{
+		"Display_Name": "Net.Pipe Listener Adapter **",
+		"Service_Name": "NetPipeActivator",
+		"DEFAULT_Windows_10_Home": "Not Installed (Automatic",
+		"DEFAULT_Windows_10_Pro": " Running)",
+		"Safe_Desktop": "Not Installed (Automatic",
+		"Safe_Mobile": " Running)",
+		"Tweaked_Desktop": "Not Installed",
+		"Quick_Notes": "Not Installed"
+	},
+	{
+		"Display_Name": "Net.Tcp Listener Adapter **",
+		"Service_Name": "NetTcpActivator",
+		"DEFAULT_Windows_10_Home": "Not Installed (Automatic",
+		"DEFAULT_Windows_10_Pro": " Running)",
+		"Safe_Desktop": "Not Installed (Automatic",
+		"Safe_Mobile": " Running)",
+		"Tweaked_Desktop": "Not Installed",
+		"Quick_Notes": "Not Installed"
+	},
+	{
+		"Display_Name": "Net.Tcp Port Sharing Service **",
+		"Service_Name": "NetTcpPortSharing",
+		"DEFAULT_Windows_10_Home": "Disabled (Changed to Manual and Running if the previous 3 Services are installed)",
+		"DEFAULT_Windows_10_Pro": "Disabled (Changed to Manual and Runningif the previous 3 Services are installed)",
+		"Safe_Desktop": "Uninstalled *",
+		"Safe_Mobile": "Uninstalled *",
+		"Tweaked_Desktop": "Uninstalled *",
+		"Quick_Notes": "Leave Not Installed."
+	},
+	{
+		"Display_Name": "Netlogon",
+		"Service_Name": "Netlogon",
+		"DEFAULT_Windows_10_Home": "Manual",
+		"DEFAULT_Windows_10_Pro": "Manual",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Disabled *",
+		"Quick_Notes": "Used only with a domain controller environment."
+	},
+	{
+		"Display_Name": "Network Connected Devices Auto-Setup",
+		"Service_Name": "NcdAutoSetup",
+		"DEFAULT_Windows_10_Home": "Manual (Trigger Start",
+		"DEFAULT_Windows_10_Pro": " Running)",
+		"Safe_Desktop": "Manual (Trigger Start",
+		"Safe_Mobile": " Running)",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": "Manual"
+	},
+	{
+		"Display_Name": "Network Connection Broker",
+		"Service_Name": "NcbService",
+		"DEFAULT_Windows_10_Home": "Manual (Trigger Start",
+		"DEFAULT_Windows_10_Pro": " Running)",
+		"Safe_Desktop": "Manual (Trigger Start",
+		"Safe_Mobile": " Running)",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": "Manual"
+	},
+	{
+		"Display_Name": "Network Connections",
+		"Service_Name": "Netman",
+		"DEFAULT_Windows_10_Home": "Manual",
+		"DEFAULT_Windows_10_Pro": "Manual",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Network Connectivity Assistant",
+		"Service_Name": "NcaSVC",
+		"DEFAULT_Windows_10_Home": "Manual (Trigger Start)",
+		"DEFAULT_Windows_10_Pro": "Manual (Trigger Start)",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Network List Service",
+		"Service_Name": "netprofm",
+		"DEFAULT_Windows_10_Home": "Manual (Running)",
+		"DEFAULT_Windows_10_Pro": "Manual (Running)",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Network Location Awareness",
+		"Service_Name": "NlaSvc",
+		"DEFAULT_Windows_10_Home": "Automatic (Running)",
+		"DEFAULT_Windows_10_Pro": "Automatic (Running)",
+		"Safe_Desktop": "Automatic",
+		"Safe_Mobile": "Automatic",
+		"Tweaked_Desktop": "Automatic",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Network Setup Service",
+		"Service_Name": "NetSetupSvc",
+		"DEFAULT_Windows_10_Home": "Manual (Trigger Start)",
+		"DEFAULT_Windows_10_Pro": "Manual (Trigger Start)",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Network Store Interface Service",
+		"Service_Name": "nsi",
+		"DEFAULT_Windows_10_Home": "Automatic (Running)",
+		"DEFAULT_Windows_10_Pro": "Automatic (Running)",
+		"Safe_Desktop": "Automatic",
+		"Safe_Mobile": "Automatic",
+		"Tweaked_Desktop": "Automatic",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Offline Files",
+		"Service_Name": "CscService",
+		"DEFAULT_Windows_10_Home": "Not Available",
+		"DEFAULT_Windows_10_Pro": "Manual (Trigger Start)",
+		"Safe_Desktop": "Disabled *",
+		"Safe_Mobile": "Disabled *",
+		"Tweaked_Desktop": "Disabled *",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "OpenSSH Authentication Agent",
+		"Service_Name": "ssh-agent",
+		"DEFAULT_Windows_10_Home": "Manual",
+		"DEFAULT_Windows_10_Pro": "Manual",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": "New."
+	},
+	{
+		"Display_Name": "Optimize Drives",
+		"Service_Name": "defragsvc",
+		"DEFAULT_Windows_10_Home": "Manual",
+		"DEFAULT_Windows_10_Pro": "Manual",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Parental Controls",
+		"Service_Name": "WpcMonSvc",
+		"DEFAULT_Windows_10_Home": "Manual",
+		"DEFAULT_Windows_10_Pro": "Manual",
+		"Safe_Desktop": "Disabled *",
+		"Safe_Mobile": "Disabled *",
+		"Tweaked_Desktop": "Disabled *",
+		"Quick_Notes": "New."
+	},
+	{
+		"Display_Name": "Payments and NFC/SE Manager",
+		"Service_Name": "SEMgrSvc",
+		"DEFAULT_Windows_10_Home": "Manual (Trigger Start)",
+		"DEFAULT_Windows_10_Pro": "Manual (Trigger Start)",
+		"Safe_Desktop": "Disabled *",
+		"Safe_Mobile": "Disabled *",
+		"Tweaked_Desktop": "Disabled *",
+		"Quick_Notes": "Near Field Communication is a mobile phone technology. Not needed on desktops and tablets."
+	},
+	{
+		"Display_Name": "Peer Name Resolution Protocol",
+		"Service_Name": "PNRPsvc",
+		"DEFAULT_Windows_10_Home": "Manual",
+		"DEFAULT_Windows_10_Pro": "Manual",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Peer Networking Grouping",
+		"Service_Name": "p2psvc",
+		"DEFAULT_Windows_10_Home": "Manual",
+		"DEFAULT_Windows_10_Pro": "Manual",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Peer Networking Identity Manager",
+		"Service_Name": "p2pimsvc",
+		"DEFAULT_Windows_10_Home": "Manual",
+		"DEFAULT_Windows_10_Pro": "Manual",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Performance Counter DLL Host",
+		"Service_Name": "PerfHost",
+		"DEFAULT_Windows_10_Home": "Manual",
+		"DEFAULT_Windows_10_Pro": "Manual",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Performance Logs & Alerts",
+		"Service_Name": "pla",
+		"DEFAULT_Windows_10_Home": "Manual",
+		"DEFAULT_Windows_10_Pro": "Manual",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Phone Service",
+		"Service_Name": "PhoneSvc",
+		"DEFAULT_Windows_10_Home": "Manual (Trigger Start)",
+		"DEFAULT_Windows_10_Pro": "Manual (Trigger Start)",
+		"Safe_Desktop": "Disabled *",
+		"Safe_Mobile": "Disabled *",
+		"Tweaked_Desktop": "Disabled *",
+		"Quick_Notes": "Windows Phone Service."
+	},
+	{
+		"Display_Name": "Plug and Play",
+		"Service_Name": "PlugPlay",
+		"DEFAULT_Windows_10_Home": "Manual (Running)",
+		"DEFAULT_Windows_10_Pro": "Manual (Running)",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": "Do not disable."
+	},
+	{
+		"Display_Name": "PNRP Machine Name Publication Service",
+		"Service_Name": "PNRPAutoReg",
+		"DEFAULT_Windows_10_Home": "Manual",
+		"DEFAULT_Windows_10_Pro": "Manual",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Portable Device Enumerator Service",
+		"Service_Name": "WPDBusEnum",
+		"DEFAULT_Windows_10_Home": "Manual (Trigger Start)",
+		"DEFAULT_Windows_10_Pro": "Manual (Trigger Start)",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Power",
+		"Service_Name": "Power",
+		"DEFAULT_Windows_10_Home": "Automatic (Running)",
+		"DEFAULT_Windows_10_Pro": "Automatic (Running)",
+		"Safe_Desktop": "Automatic",
+		"Safe_Mobile": "Automatic",
+		"Tweaked_Desktop": "Automatic",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Print Spooler",
+		"Service_Name": "Spooler",
+		"DEFAULT_Windows_10_Home": "Automatic (Running)",
+		"DEFAULT_Windows_10_Pro": "Automatic (Running)",
+		"Safe_Desktop": "Automatic",
+		"Safe_Mobile": "Automatic",
+		"Tweaked_Desktop": "Automatic",
+		"Quick_Notes": "Do not disable."
+	},
+	{
+		"Display_Name": "Printer Extensions and Notifications",
+		"Service_Name": "PrintNotify",
+		"DEFAULT_Windows_10_Home": "Manual",
+		"DEFAULT_Windows_10_Pro": "Manual",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "PrintWorkflow_?????",
+		"Service_Name": "PrintWorkflowUserSvc_?????",
+		"DEFAULT_Windows_10_Home": "Manual",
+		"DEFAULT_Windows_10_Pro": "Manual",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": "Cannot be disabled via services.msc"
+	},
+	{
+		"Display_Name": "Problem Reports and Solutions Control Panel Support",
+		"Service_Name": "wercplsupport",
+		"DEFAULT_Windows_10_Home": "Manual",
+		"DEFAULT_Windows_10_Pro": "Manual",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Program Compatibility Assistant Service",
+		"Service_Name": "PcaSvc",
+		"DEFAULT_Windows_10_Home": "Automatic (Running)",
+		"DEFAULT_Windows_10_Pro": "Automatic (Running)",
+		"Safe_Desktop": "Automatic",
+		"Safe_Mobile": "Automatic",
+		"Tweaked_Desktop": "Automatic",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Quality Windows Audio Video Experience",
+		"Service_Name": "QWAVE",
+		"DEFAULT_Windows_10_Home": "Manual",
+		"DEFAULT_Windows_10_Pro": "Manual",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Radio Management Service",
+		"Service_Name": "RmSvc",
+		"DEFAULT_Windows_10_Home": "Manual",
+		"DEFAULT_Windows_10_Pro": "Manual",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": "Keep Manual for Mobile devices"
+	},
+	{
+		"Display_Name": "Remote Access Auto Connection Manager",
+		"Service_Name": "RasAuto",
+		"DEFAULT_Windows_10_Home": "Manual",
+		"DEFAULT_Windows_10_Pro": "Manual",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Remote Access Connection Manager",
+		"Service_Name": "RasMan",
+		"DEFAULT_Windows_10_Home": "Manual",
+		"DEFAULT_Windows_10_Pro": "Manual",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Remote Desktop Configuration",
+		"Service_Name": "SessionEnv",
+		"DEFAULT_Windows_10_Home": "Manual (Maybe Runningwhen using Remote Desktop)",
+		"DEFAULT_Windows_10_Pro": "Manual (Maybe Running when using Remote Desktop)",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Disabled *",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Remote Desktop Services",
+		"Service_Name": "TermService",
+		"DEFAULT_Windows_10_Home": "Manual (Maybe Running when using Remote Desktop)",
+		"DEFAULT_Windows_10_Pro": "Manual (Maybe Running when using Remote Desktop)",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Disabled *",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Remote Desktop Services UserMode Port Redirector",
+		"Service_Name": "UmRdpService",
+		"DEFAULT_Windows_10_Home": "Manual (Maybe Running when using Remote Desktop)",
+		"DEFAULT_Windows_10_Pro": "Manual (Maybe Running when using Remote Desktop)",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Disabled *",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Remote Procedure Call (RPC)",
+		"Service_Name": "RpcSs",
+		"DEFAULT_Windows_10_Home": "Automatic (Running)",
+		"DEFAULT_Windows_10_Pro": "Automatic (Running)",
+		"Safe_Desktop": "Automatic",
+		"Safe_Mobile": "Automatic",
+		"Tweaked_Desktop": "Automatic",
+		"Quick_Notes": "Cannot be disabled via services.msc"
+	},
+	{
+		"Display_Name": "Remote Procedure Call (RPC) Locator",
+		"Service_Name": "RpcLocator",
+		"DEFAULT_Windows_10_Home": "Manual",
+		"DEFAULT_Windows_10_Pro": "Manual",
+		"Safe_Desktop": "Disabled *",
+		"Safe_Mobile": "Disabled *",
+		"Tweaked_Desktop": "Disabled *",
+		"Quick_Notes": "No function in Windows 10."
+	},
+	{
+		"Display_Name": "Remote Registry",
+		"Service_Name": "RemoteRegistry",
+		"DEFAULT_Windows_10_Home": "Disabled",
+		"DEFAULT_Windows_10_Pro": "Disabled",
+		"Safe_Desktop": "Disabled",
+		"Safe_Mobile": "Disabled",
+		"Tweaked_Desktop": "Disabled",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Retail Demo Service",
+		"Service_Name": "RetailDemo",
+		"DEFAULT_Windows_10_Home": "Manual",
+		"DEFAULT_Windows_10_Pro": "Manual",
+		"Safe_Desktop": "Disabled *",
+		"Safe_Mobile": "Disabled *",
+		"Tweaked_Desktop": "Disabled *",
+		"Quick_Notes": "Not disabled by default? Really?"
+	},
+	{
+		"Display_Name": "RIP Listener **",
+		"Service_Name": "iprip",
+		"DEFAULT_Windows_10_Home": "Not Installed (Automatic",
+		"DEFAULT_Windows_10_Pro": " Running)",
+		"Safe_Desktop": "Not Installed (Automatic",
+		"Safe_Mobile": " Running)",
+		"Tweaked_Desktop": "Not Installed",
+		"Quick_Notes": "Not Installed"
+	},
+	{
+		"Display_Name": "Routing and Remote Access",
+		"Service_Name": "RemoteAccess",
+		"DEFAULT_Windows_10_Home": "Disabled",
+		"DEFAULT_Windows_10_Pro": "Disabled",
+		"Safe_Desktop": "Disabled",
+		"Safe_Mobile": "Disabled",
+		"Tweaked_Desktop": "Disabled",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "RPC Endpoint Mapper",
+		"Service_Name": "RpcEptMapper",
+		"DEFAULT_Windows_10_Home": "Automatic (Running)",
+		"DEFAULT_Windows_10_Pro": "Automatic (Running)",
+		"Safe_Desktop": "Automatic",
+		"Safe_Mobile": "Automatic",
+		"Tweaked_Desktop": "Automatic",
+		"Quick_Notes": "Cannot be disabled via services.msc"
+	},
+	{
+		"Display_Name": "Secondary Logon",
+		"Service_Name": "seclogon",
+		"DEFAULT_Windows_10_Home": "Manual",
+		"DEFAULT_Windows_10_Pro": "Manual",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Secure Socket Tunneling Protocol Service",
+		"Service_Name": "SstpSvc",
+		"DEFAULT_Windows_10_Home": "Manual",
+		"DEFAULT_Windows_10_Pro": "Manual",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": "SSTP VPN Capability."
+	},
+	{
+		"Display_Name": "Security Accounts Manager",
+		"Service_Name": "SamSs",
+		"DEFAULT_Windows_10_Home": "Automatic (Running)",
+		"DEFAULT_Windows_10_Pro": "Automatic (Running)",
+		"Safe_Desktop": "Automatic",
+		"Safe_Mobile": "Automatic",
+		"Tweaked_Desktop": "Automatic",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Security Center",
+		"Service_Name": "wscsvc",
+		"DEFAULT_Windows_10_Home": "Automatic (Delayed Start",
+		"DEFAULT_Windows_10_Pro": " Running)",
+		"Safe_Desktop": "Automatic (Delayed Start",
+		"Safe_Mobile": " Running)",
+		"Tweaked_Desktop": "Automatic (Delayed Start)",
+		"Quick_Notes": "Automatic (Delayed Start)"
+	},
+	{
+		"Display_Name": "Sensor Data Service",
+		"Service_Name": "SensorDataService",
+		"DEFAULT_Windows_10_Home": "Manual (Trigger Start)",
+		"DEFAULT_Windows_10_Pro": "Manual (Trigger Start)",
+		"Safe_Desktop": "Disabled *",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Disabled *",
+		"Quick_Notes": "Leave as default for laptops and tablets."
+	},
+	{
+		"Display_Name": "Sensor Monitoring Service",
+		"Service_Name": "SensrSvc",
+		"DEFAULT_Windows_10_Home": "Manual (Trigger Start)",
+		"DEFAULT_Windows_10_Pro": "Manual (Trigger Start)",
+		"Safe_Desktop": "Disabled *",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Disabled *",
+		"Quick_Notes": "Leave as default for laptops and tablets."
+	},
+	{
+		"Display_Name": "Sensor Service",
+		"Service_Name": "SensorService",
+		"DEFAULT_Windows_10_Home": "Manual (Trigger Start)",
+		"DEFAULT_Windows_10_Pro": "Manual (Trigger Start)",
+		"Safe_Desktop": "Disabled *",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Disabled *",
+		"Quick_Notes": "Leave as default for laptops and tablets."
+	},
+	{
+		"Display_Name": "Server",
+		"Service_Name": "LanmanServer",
+		"DEFAULT_Windows_10_Home": "Automatic (Running)",
+		"DEFAULT_Windows_10_Pro": "Automatic (Running)",
+		"Safe_Desktop": "Automatic",
+		"Safe_Mobile": "Automatic",
+		"Tweaked_Desktop": "Automatic",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Shared PC Account Manager",
+		"Service_Name": "shpamsvc",
+		"DEFAULT_Windows_10_Home": "Disabled",
+		"DEFAULT_Windows_10_Pro": "Disabled",
+		"Safe_Desktop": "Disabled",
+		"Safe_Mobile": "Disabled",
+		"Tweaked_Desktop": "Disabled",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Shell Hardware Detection",
+		"Service_Name": "ShellHWDetection",
+		"DEFAULT_Windows_10_Home": "Automatic (Running)",
+		"DEFAULT_Windows_10_Pro": "Automatic (Running)",
+		"Safe_Desktop": "Automatic",
+		"Safe_Mobile": "Automatic",
+		"Tweaked_Desktop": "Automatic",
+		"Quick_Notes": "Autoplay"
+	},
+	{
+		"Display_Name": "Simple TCP/IP Services **",
+		"Service_Name": "simptcp",
+		"DEFAULT_Windows_10_Home": "Not Installed (Automatic",
+		"DEFAULT_Windows_10_Pro": " Running)",
+		"Safe_Desktop": "Not Installed (Automatic",
+		"Safe_Mobile": " Running)",
+		"Tweaked_Desktop": "Not Installed",
+		"Quick_Notes": "Not Installed"
+	},
+	{
+		"Display_Name": "Smart Card",
+		"Service_Name": "SCardSvr",
+		"DEFAULT_Windows_10_Home": "Disabled",
+		"DEFAULT_Windows_10_Pro": "Disabled",
+		"Safe_Desktop": "Disabled",
+		"Safe_Mobile": "Disabled",
+		"Tweaked_Desktop": "Disabled",
+		"Quick_Notes": "Not needed if Smart Card login is not in use."
+	},
+	{
+		"Display_Name": "Smart Card Device Enumeration Service",
+		"Service_Name": "ScDeviceEnum",
+		"DEFAULT_Windows_10_Home": "Manual (Trigger Start)",
+		"DEFAULT_Windows_10_Pro": "Manual (Trigger Start)",
+		"Safe_Desktop": "Disabled *",
+		"Safe_Mobile": "Disabled *",
+		"Tweaked_Desktop": "Disabled *",
+		"Quick_Notes": "Not needed if Smart Card login is not in use."
+	},
+	{
+		"Display_Name": "Smart Card Removal Policy",
+		"Service_Name": "SCPolicySvc",
+		"DEFAULT_Windows_10_Home": "Manual",
+		"DEFAULT_Windows_10_Pro": "Manual",
+		"Safe_Desktop": "Disabled *",
+		"Safe_Mobile": "Disabled *",
+		"Tweaked_Desktop": "Disabled *",
+		"Quick_Notes": "Not needed if Smart Card login is not in use."
+	},
+	{
+		"Display_Name": "SNMP Service **",
+		"Service_Name": "SNMP",
+		"DEFAULT_Windows_10_Home": "Not Installed (Automatic",
+		"DEFAULT_Windows_10_Pro": " Running)",
+		"Safe_Desktop": "Not Installed (Automatic",
+		"Safe_Mobile": " Running)",
+		"Tweaked_Desktop": "Not Installed",
+		"Quick_Notes": "Not Installed"
+	},
+	{
+		"Display_Name": "SNMP Trap",
+		"Service_Name": "SNMPTRAP",
+		"DEFAULT_Windows_10_Home": "Manual",
+		"DEFAULT_Windows_10_Pro": "Manual",
+		"Safe_Desktop": "Disabled *",
+		"Safe_Mobile": "Disabled *",
+		"Tweaked_Desktop": "Disabled *",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Software Protection",
+		"Service_Name": "sppsvc",
+		"DEFAULT_Windows_10_Home": "Automatic (Delayed Start",
+		"DEFAULT_Windows_10_Pro": "Trigger Start)",
+		"Safe_Desktop": "Automatic (Delayed Start",
+		"Safe_Mobile": "Trigger Start)",
+		"Tweaked_Desktop": "Automatic (Delayed Start)",
+		"Quick_Notes": "Automatic (Delayed Start)"
+	},
+	{
+		"Display_Name": "Spatial Data Service",
+		"Service_Name": "SharedRealitySvc",
+		"DEFAULT_Windows_10_Home": "Manual",
+		"DEFAULT_Windows_10_Pro": "Manual",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": "Virtual Reality data manager."
+	},
+	{
+		"Display_Name": "Spot Verifier",
+		"Service_Name": "svsvc",
+		"DEFAULT_Windows_10_Home": "Manual (Trigger Start)",
+		"DEFAULT_Windows_10_Pro": "Manual (Trigger Start)",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "SSDP Discovery",
+		"Service_Name": "SSDPSRV",
+		"DEFAULT_Windows_10_Home": "Manual (Running)",
+		"DEFAULT_Windows_10_Pro": "Manual (Running)",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": "UPnP functionality. Possible security risk."
+	},
+	{
+		"Display_Name": "State Repository Service",
+		"Service_Name": "StateRepository",
+		"DEFAULT_Windows_10_Home": "Manual (Running)",
+		"DEFAULT_Windows_10_Pro": "Manual (Running)",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": "Cannot be disabled via services.msc"
+	},
+	{
+		"Display_Name": "Still Image Acquisition Events",
+		"Service_Name": "WiaRpc",
+		"DEFAULT_Windows_10_Home": "Manual",
+		"DEFAULT_Windows_10_Pro": "Manual",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Storage Service",
+		"Service_Name": "StorSvc",
+		"DEFAULT_Windows_10_Home": "Manual (Trigger Start)",
+		"DEFAULT_Windows_10_Pro": "Manual (Trigger Start)",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": "Required for Windows Store."
+	},
+	{
+		"Display_Name": "Storage Tiers Management",
+		"Service_Name": "TieringEngineService",
+		"DEFAULT_Windows_10_Home": "Manual",
+		"DEFAULT_Windows_10_Pro": "Manual",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Superfetch",
+		"Service_Name": "SysMain",
+		"DEFAULT_Windows_10_Home": "Automatic (Running)",
+		"DEFAULT_Windows_10_Pro": "Automatic (Running)",
+		"Safe_Desktop": "Automatic",
+		"Safe_Mobile": "Automatic",
+		"Tweaked_Desktop": "Automatic",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Sync Host_?????",
+		"Service_Name": "OneSyncSvc_?????",
+		"DEFAULT_Windows_10_Home": "Automatic (Delayed Start)",
+		"DEFAULT_Windows_10_Pro": "Automatic (Delayed Start)",
+		"Safe_Desktop": "Automatic (Delayed Start)",
+		"Safe_Mobile": "Automatic (Delayed Start)",
+		"Tweaked_Desktop": "Automatic (Delayed Start)",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "System Event Notification Service",
+		"Service_Name": "SENS",
+		"DEFAULT_Windows_10_Home": "Automatic (Running)",
+		"DEFAULT_Windows_10_Pro": "Automatic (Running)",
+		"Safe_Desktop": "Automatic",
+		"Safe_Mobile": "Automatic",
+		"Tweaked_Desktop": "Automatic",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "System Events Broker",
+		"Service_Name": "SystemEventsBroker",
+		"DEFAULT_Windows_10_Home": "Automatic (Trigger Start",
+		"DEFAULT_Windows_10_Pro": " Running)",
+		"Safe_Desktop": "Automatic (Trigger Start",
+		"Safe_Mobile": " Running)",
+		"Tweaked_Desktop": "Automatic",
+		"Quick_Notes": "Automatic"
+	},
+	{
+		"Display_Name": "System Guard Runtime Monitor Broker",
+		"Service_Name": "SgrmBroker",
+		"DEFAULT_Windows_10_Home": "Automatic (Delayed Start",
+		"DEFAULT_Windows_10_Pro": " Running)",
+		"Safe_Desktop": "Automatic (Delayed Start",
+		"Safe_Mobile": " Running)",
+		"Tweaked_Desktop": "Automatic (Delayed Start",
+		"Quick_Notes": " Running)"
+	},
+	{
+		"Display_Name": "Task Scheduler",
+		"Service_Name": "Schedule",
+		"DEFAULT_Windows_10_Home": "Automatic (Running)",
+		"DEFAULT_Windows_10_Pro": "Automatic (Running)",
+		"Safe_Desktop": "Automatic",
+		"Safe_Mobile": "Automatic",
+		"Tweaked_Desktop": "Automatic",
+		"Quick_Notes": "Cannot be disabled via services.msc"
+	},
+	{
+		"Display_Name": "TCP/IP NetBIOS Helper",
+		"Service_Name": "lmhosts",
+		"DEFAULT_Windows_10_Home": "Manual (Trigger Start",
+		"DEFAULT_Windows_10_Pro": " Running)",
+		"Safe_Desktop": "Manual (Trigger Start",
+		"Safe_Mobile": " Running)",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": "Manual"
+	},
+	{
+		"Display_Name": "Telephony",
+		"Service_Name": "TapiSrv",
+		"DEFAULT_Windows_10_Home": "Manual",
+		"DEFAULT_Windows_10_Pro": "Manual",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Themes",
+		"Service_Name": "Themes",
+		"DEFAULT_Windows_10_Home": "Automatic (Running)",
+		"DEFAULT_Windows_10_Pro": "Automatic (Running)",
+		"Safe_Desktop": "Automatic",
+		"Safe_Mobile": "Automatic",
+		"Tweaked_Desktop": "Automatic",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Time Broker",
+		"Service_Name": "TimeBroker",
+		"DEFAULT_Windows_10_Home": "Manual (Trigger Start",
+		"DEFAULT_Windows_10_Pro": " Running)",
+		"Safe_Desktop": "Manual (Trigger Start",
+		"Safe_Mobile": " Running)",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": "Manual"
+	},
+	{
+		"Display_Name": "Touch Keyboard and Handwriting Panel Service",
+		"Service_Name": "TabletInputService",
+		"DEFAULT_Windows_10_Home": "Manual (Trigger Start)",
+		"DEFAULT_Windows_10_Pro": "Manual (Trigger Start)",
+		"Safe_Desktop": "Disabled *",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Disabled *",
+		"Quick_Notes": "Keep in Manual for laptop touch screens and tablets."
+	},
+	{
+		"Display_Name": "Unified Write Filter Servicing Helper Service **",
+		"Service_Name": "UwfServcingSvc",
+		"DEFAULT_Windows_10_Home": "Not Available",
+		"DEFAULT_Windows_10_Pro": "Not Installed",
+		"Safe_Desktop": "Not Installed",
+		"Safe_Mobile": "Not Installed",
+		"Tweaked_Desktop": "Not Installed",
+		"Quick_Notes": "Keep Not Installed. If installed: (Disabled)"
+	},
+	{
+		"Display_Name": "Update Orchestrator Service for Windows Update",
+		"Service_Name": "UsoSvc",
+		"DEFAULT_Windows_10_Home": "Manual (Running)",
+		"DEFAULT_Windows_10_Pro": "Manual (Running)",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "UPnP Device Host",
+		"Service_Name": "upnphost",
+		"DEFAULT_Windows_10_Home": "Manual",
+		"DEFAULT_Windows_10_Pro": "Manual",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "User Data Access_?????",
+		"Service_Name": "UserDataSvc_?????",
+		"DEFAULT_Windows_10_Home": "Manual (Running)",
+		"DEFAULT_Windows_10_Pro": "Manual (Running)",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": "Cannot be disabled via services.msc"
+	},
+	{
+		"Display_Name": "User Data Storage_?????",
+		"Service_Name": "UnistoreSvc_?????",
+		"DEFAULT_Windows_10_Home": "Manual (Running)",
+		"DEFAULT_Windows_10_Pro": "Manual (Running)",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": "Cannot be disabled via services.msc"
+	},
+	{
+		"Display_Name": "User Experience Virtualization Service",
+		"Service_Name": "UevAgentService",
+		"DEFAULT_Windows_10_Home": "Not Available",
+		"DEFAULT_Windows_10_Pro": "Disabled",
+		"Safe_Desktop": "Disabled",
+		"Safe_Mobile": "Disabled",
+		"Tweaked_Desktop": "Disabled",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "User Manager",
+		"Service_Name": "UserManager",
+		"DEFAULT_Windows_10_Home": "Automatic (Trigger Start",
+		"DEFAULT_Windows_10_Pro": " Running)",
+		"Safe_Desktop": "Automatic (Trigger Start",
+		"Safe_Mobile": " Running)",
+		"Tweaked_Desktop": "Automatic",
+		"Quick_Notes": "Automatic"
+	},
+	{
+		"Display_Name": "User Profile Service",
+		"Service_Name": "ProfSvc",
+		"DEFAULT_Windows_10_Home": "Automatic (Running)",
+		"DEFAULT_Windows_10_Pro": "Automatic (Running)",
+		"Safe_Desktop": "Automatic",
+		"Safe_Mobile": "Automatic",
+		"Tweaked_Desktop": "Automatic",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Virtual Disk",
+		"Service_Name": "vds",
+		"DEFAULT_Windows_10_Home": "Manual",
+		"DEFAULT_Windows_10_Pro": "Manual",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Volume Shadow Copy",
+		"Service_Name": "VSS",
+		"DEFAULT_Windows_10_Home": "Manual",
+		"DEFAULT_Windows_10_Pro": "Manual",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": "Windows Backup."
+	},
+	{
+		"Display_Name": "W3C Logging Service **",
+		"Service_Name": "W3LOGSVC",
+		"DEFAULT_Windows_10_Home": "Not Installed",
+		"DEFAULT_Windows_10_Pro": "Not Installed",
+		"Safe_Desktop": "Not Installed",
+		"Safe_Mobile": "Not Installed",
+		"Tweaked_Desktop": "Not Installed",
+		"Quick_Notes": "Keep Not Installed. If installed: (Manual)"
+	},
+	{
+		"Display_Name": "WalletService",
+		"Service_Name": "WalletService",
+		"DEFAULT_Windows_10_Home": "Manual",
+		"DEFAULT_Windows_10_Pro": "Manual",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Web Management Service **",
+		"Service_Name": "WMSVC",
+		"DEFAULT_Windows_10_Home": "Not Installed (Manual)",
+		"DEFAULT_Windows_10_Pro": "Not Installed (Manual)",
+		"Safe_Desktop": "Not Installed",
+		"Safe_Mobile": "Not Installed",
+		"Tweaked_Desktop": "Not Installed",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "WarpJITSvc",
+		"Service_Name": "",
+		"DEFAULT_Windows_10_Home": "Manual (Trigger Start)",
+		"DEFAULT_Windows_10_Pro": "Manual (Trigger Start)",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Web Account Manager",
+		"Service_Name": "TokenBroker",
+		"DEFAULT_Windows_10_Home": "Manual (Running)",
+		"DEFAULT_Windows_10_Pro": "Manual (Running)",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "WebClient",
+		"Service_Name": "WebClient",
+		"DEFAULT_Windows_10_Home": "Manual (Trigger Start)",
+		"DEFAULT_Windows_10_Pro": "Manual (Trigger Start)",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Disabled *",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Wi-Fi Direct Services Connection Manager Service",
+		"Service_Name": "WFDSConSvc",
+		"DEFAULT_Windows_10_Home": "Manual (Trigger Start)",
+		"DEFAULT_Windows_10_Pro": "Manual (Trigger Start)",
+		"Safe_Desktop": "Disabled *",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Disabled *",
+		"Quick_Notes": "Connect to wireless display."
+	},
+	{
+		"Display_Name": "Windows Audio",
+		"Service_Name": "AudioSrv",
+		"DEFAULT_Windows_10_Home": "Automatic (Running)",
+		"DEFAULT_Windows_10_Pro": "Automatic (Running)",
+		"Safe_Desktop": "Automatic",
+		"Safe_Mobile": "Automatic",
+		"Tweaked_Desktop": "Automatic",
+		"Quick_Notes": "Do not disable."
+	},
+	{
+		"Display_Name": "Windows Audio Endpoint Builder",
+		"Service_Name": "AudioEndpointBuilder",
+		"DEFAULT_Windows_10_Home": "Automatic (Running)",
+		"DEFAULT_Windows_10_Pro": "Automatic (Running)",
+		"Safe_Desktop": "Automatic",
+		"Safe_Mobile": "Automatic",
+		"Tweaked_Desktop": "Automatic",
+		"Quick_Notes": "Do not disable."
+	},
+	{
+		"Display_Name": "Windows Backup",
+		"Service_Name": "SDRSVC",
+		"DEFAULT_Windows_10_Home": "Manual",
+		"DEFAULT_Windows_10_Pro": "Manual",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": "Do not disable."
+	},
+	{
+		"Display_Name": "Windows Biometric Service",
+		"Service_Name": "WbioSrvc",
+		"DEFAULT_Windows_10_Home": "Manual (Trigger Start)",
+		"DEFAULT_Windows_10_Pro": "Manual (Trigger Start)",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Windows Camera Frame Server",
+		"Service_Name": "FrameServer",
+		"DEFAULT_Windows_10_Home": "Manual (Trigger Start)",
+		"DEFAULT_Windows_10_Pro": "Manual (Trigger Start)",
+		"Safe_Desktop": "Disabled *",
+		"Safe_Mobile": "Disabled *",
+		"Tweaked_Desktop": "Disabled *",
+		"Quick_Notes": "Could be needed to capture webcam frames."
+	},
+	{
+		"Display_Name": "Windows Connect Now - Config Registrar",
+		"Service_Name": "wcncsvc",
+		"DEFAULT_Windows_10_Home": "Manual",
+		"DEFAULT_Windows_10_Pro": "Manual",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Disabled *",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Windows Connection Manager",
+		"Service_Name": "Wcmsvc",
+		"DEFAULT_Windows_10_Home": "Automatic (Trigger Start",
+		"DEFAULT_Windows_10_Pro": " Running)",
+		"Safe_Desktop": "Automatic (Trigger Start",
+		"Safe_Mobile": " Running)",
+		"Tweaked_Desktop": "Automatic",
+		"Quick_Notes": "Automatic"
+	},
+	{
+		"Display_Name": "Windows Defender Advanced Threat Protection Service",
+		"Service_Name": "Sense",
+		"DEFAULT_Windows_10_Home": "Not Available",
+		"DEFAULT_Windows_10_Pro": "Manual",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Windows Defender Antivirus Network Inspection Service",
+		"Service_Name": "WdNisSvc",
+		"DEFAULT_Windows_10_Home": "Manual (Running)",
+		"DEFAULT_Windows_10_Pro": "Manual (Running)",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": "Cannot be disabled via services.msc"
+	},
+	{
+		"Display_Name": "Windows Defender Antivirus Service",
+		"Service_Name": "WinDefend",
+		"DEFAULT_Windows_10_Home": "Automatic (Running)",
+		"DEFAULT_Windows_10_Pro": "Automatic (Running)",
+		"Safe_Desktop": "Automatic",
+		"Safe_Mobile": "Automatic",
+		"Tweaked_Desktop": "Automatic",
+		"Quick_Notes": "Cannot be disabled via services.msc"
+	},
+	{
+		"Display_Name": "Windows Defender Firewall",
+		"Service_Name": "MpsSvc",
+		"DEFAULT_Windows_10_Home": "Automatic (Running)",
+		"DEFAULT_Windows_10_Pro": "Automatic (Running)",
+		"Safe_Desktop": "Automatic",
+		"Safe_Mobile": "Automatic",
+		"Tweaked_Desktop": "Automatic",
+		"Quick_Notes": "Cannot be disabled via services.msc"
+	},
+	{
+		"Display_Name": "Windows Defender Security Center Service",
+		"Service_Name": "SecurityHealthService",
+		"DEFAULT_Windows_10_Home": "Automatic (Running)",
+		"DEFAULT_Windows_10_Pro": "Automatic (Running)",
+		"Safe_Desktop": "Automatic",
+		"Safe_Mobile": "Automatic",
+		"Tweaked_Desktop": "Automatic",
+		"Quick_Notes": "Cannot be disabled via services.msc"
+	},
+	{
+		"Display_Name": "Windows Encryption Provider Host Service",
+		"Service_Name": "WEPHOSTSVC",
+		"DEFAULT_Windows_10_Home": "Manual (Trigger Start)",
+		"DEFAULT_Windows_10_Pro": "Manual (Trigger Start)",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Windows Error Reporting Service",
+		"Service_Name": "WerSvc",
+		"DEFAULT_Windows_10_Home": "Manual (Trigger Start)",
+		"DEFAULT_Windows_10_Pro": "Manual (Trigger Start)",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Windows Event Collector",
+		"Service_Name": "Wecsvc",
+		"DEFAULT_Windows_10_Home": "Manual",
+		"DEFAULT_Windows_10_Pro": "Manual",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Windows Event Log",
+		"Service_Name": "EventLog",
+		"DEFAULT_Windows_10_Home": "Automatic (Running)",
+		"DEFAULT_Windows_10_Pro": "Automatic (Running)",
+		"Safe_Desktop": "Automatic",
+		"Safe_Mobile": "Automatic",
+		"Tweaked_Desktop": "Automatic",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Windows Font Cache Service",
+		"Service_Name": "FontCache",
+		"DEFAULT_Windows_10_Home": "Automatic (Running)",
+		"DEFAULT_Windows_10_Pro": "Automatic (Running)",
+		"Safe_Desktop": "Automatic",
+		"Safe_Mobile": "Automatic",
+		"Tweaked_Desktop": "Automatic",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Windows Image Acquisition (WIA)",
+		"Service_Name": "StiSvc",
+		"DEFAULT_Windows_10_Home": "Manual",
+		"DEFAULT_Windows_10_Pro": "Manual",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Windows Insider Service",
+		"Service_Name": "wisvc",
+		"DEFAULT_Windows_10_Home": "Manual (Trigger Start)",
+		"DEFAULT_Windows_10_Pro": "Manual (Trigger Start)",
+		"Safe_Desktop": "Disabled *",
+		"Safe_Mobile": "Disabled *",
+		"Tweaked_Desktop": "Disabled *",
+		"Quick_Notes": "Disable if not beta testing new versions of Windows via the Insider program."
+	},
+	{
+		"Display_Name": "Windows Installer",
+		"Service_Name": "msiserver",
+		"DEFAULT_Windows_10_Home": "Manual",
+		"DEFAULT_Windows_10_Pro": "Manual",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": "Cannot be disabled via services.msc"
+	},
+	{
+		"Display_Name": "Windows License Manager Service",
+		"Service_Name": "LicenseManager",
+		"DEFAULT_Windows_10_Home": "Manual (Trigger Start)",
+		"DEFAULT_Windows_10_Pro": "Manual (Trigger Start)",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": "Windows Store."
+	},
+	{
+		"Display_Name": "Windows Management Instrumentation",
+		"Service_Name": "Winmgmt",
+		"DEFAULT_Windows_10_Home": "Automatic (Running)",
+		"DEFAULT_Windows_10_Pro": "Automatic (Running)",
+		"Safe_Desktop": "Automatic",
+		"Safe_Mobile": "Automatic",
+		"Tweaked_Desktop": "Automatic",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Windows Media Player Network Sharing Service **",
+		"Service_Name": "WMPNetworkSvc",
+		"DEFAULT_Windows_10_Home": "Manual",
+		"DEFAULT_Windows_10_Pro": "Manual",
+		"Safe_Desktop": "Disabled * (Uninstalled)",
+		"Safe_Mobile": "Disabled * (Uninstalled)",
+		"Tweaked_Desktop": "Disabled * (Uninstalled)",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Windows Mobile Hotspot Service",
+		"Service_Name": "icssvc",
+		"DEFAULT_Windows_10_Home": "Manual (Trigger Start)",
+		"DEFAULT_Windows_10_Pro": "Manual (Trigger Start)",
+		"Safe_Desktop": "Disabled *",
+		"Safe_Mobile": "Disabled *",
+		"Tweaked_Desktop": "Disabled *",
+		"Quick_Notes": "Mobile Network Connection (3G"
+	},
+	{
+		"Display_Name": "Windows Modules Installer",
+		"Service_Name": "TrustedInstaller",
+		"DEFAULT_Windows_10_Home": "Manual",
+		"DEFAULT_Windows_10_Pro": "Manual",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Windows Perception Service",
+		"Service_Name": "spectrum",
+		"DEFAULT_Windows_10_Home": "Manual (Trigger Start)",
+		"DEFAULT_Windows_10_Pro": "Manual (Trigger Start)",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": "New Virtual Reality Service"
+	},
+	{
+		"Display_Name": "Windows Presentation Foundation Font Cache 3.0.0.0 **",
+		"Service_Name": "FontCache3.0.0.0",
+		"DEFAULT_Windows_10_Home": "Not Installed (Manual)",
+		"DEFAULT_Windows_10_Pro": "Not Installed (Manual)",
+		"Safe_Desktop": "Not Installed",
+		"Safe_Mobile": "Not Installed",
+		"Tweaked_Desktop": "Not Installed",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Windows Process Activation Service **",
+		"Service_Name": "WAS",
+		"DEFAULT_Windows_10_Home": "Not Installed (Manual",
+		"DEFAULT_Windows_10_Pro": " Running)",
+		"Safe_Desktop": "Not Installed (Manual",
+		"Safe_Mobile": " Running)",
+		"Tweaked_Desktop": "Not Installed",
+		"Quick_Notes": "Not Installed"
+	},
+	{
+		"Display_Name": "Windows Push Notifications System Service",
+		"Service_Name": "WpnService",
+		"DEFAULT_Windows_10_Home": "Automatic (Running)",
+		"DEFAULT_Windows_10_Pro": "Automatic (Running)",
+		"Safe_Desktop": "Automatic",
+		"Safe_Mobile": "Automatic",
+		"Tweaked_Desktop": "Automatic",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Windows Push Notifications User Service_?????",
+		"Service_Name": "WpnUserService_?????",
+		"DEFAULT_Windows_10_Home": "Automatic (Running)",
+		"DEFAULT_Windows_10_Pro": "Automatic (Running)",
+		"Safe_Desktop": "Automatic",
+		"Safe_Mobile": "Automatic",
+		"Tweaked_Desktop": "Automatic",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Windows PushToInstall Service",
+		"Service_Name": "PushToInstall",
+		"DEFAULT_Windows_10_Home": "Manual",
+		"DEFAULT_Windows_10_Pro": "Manual",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": "New."
+	},
+	{
+		"Display_Name": "Windows Remote Management (WS-Management)",
+		"Service_Name": "WinRM",
+		"DEFAULT_Windows_10_Home": "Manual",
+		"DEFAULT_Windows_10_Pro": "Manual",
+		"Safe_Desktop": "Disabled *",
+		"Safe_Mobile": "Disabled *",
+		"Tweaked_Desktop": "Disabled *",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Windows Search",
+		"Service_Name": "WSearch",
+		"DEFAULT_Windows_10_Home": "Automatic (Delayed Start",
+		"DEFAULT_Windows_10_Pro": " Running)",
+		"Safe_Desktop": "Automatic (Delayed Start",
+		"Safe_Mobile": " Running)",
+		"Tweaked_Desktop": "Automatic (Delayed Start)",
+		"Quick_Notes": "Automatic (Delayed Start)"
+	},
+	{
+		"Display_Name": "Windows Time",
+		"Service_Name": "W32Time",
+		"DEFAULT_Windows_10_Home": "Manual (Trigger Start)",
+		"DEFAULT_Windows_10_Pro": "Manual (Trigger Start)",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Windows Update",
+		"Service_Name": "wuauserv",
+		"DEFAULT_Windows_10_Home": "Manual (Trigger Start)",
+		"DEFAULT_Windows_10_Pro": "Manual (Trigger Start)",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": "Do not disable."
+	},
+	{
+		"Display_Name": "Windows Update Medic Service",
+		"Service_Name": "WaaSMedicSvc",
+		"DEFAULT_Windows_10_Home": "Manual",
+		"DEFAULT_Windows_10_Pro": "Manual",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": "New."
+	},
+	{
+		"Display_Name": "WinHTTP Web Proxy Auto-Discovery Service",
+		"Service_Name": "WinHttpAutoProxySvc",
+		"DEFAULT_Windows_10_Home": "Manual (Running)",
+		"DEFAULT_Windows_10_Pro": "Manual (Running)",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Wired AutoConfig",
+		"Service_Name": "dot3svc",
+		"DEFAULT_Windows_10_Home": "Manual",
+		"DEFAULT_Windows_10_Pro": "Manual",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "WLAN AutoConfig",
+		"Service_Name": "WlanSvc",
+		"DEFAULT_Windows_10_Home": "Automatic",
+		"DEFAULT_Windows_10_Pro": "Automatic",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Automatic",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": "Automatic with Wireless Card Installed."
+	},
+	{
+		"Display_Name": "WMI Performance Adapter",
+		"Service_Name": "wmiApSrv",
+		"DEFAULT_Windows_10_Home": "Manual",
+		"DEFAULT_Windows_10_Pro": "Manual",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Work Folders **",
+		"Service_Name": "workfolderssvc",
+		"DEFAULT_Windows_10_Home": "Manual",
+		"DEFAULT_Windows_10_Pro": "Manual",
+		"Safe_Desktop": "Uninstalled *",
+		"Safe_Mobile": "Uninstalled *",
+		"Tweaked_Desktop": "Uninstalled *",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Workstation",
+		"Service_Name": "LanmanWorkstation",
+		"DEFAULT_Windows_10_Home": "Automatic (Running)",
+		"DEFAULT_Windows_10_Pro": "Automatic (Running)",
+		"Safe_Desktop": "Automatic",
+		"Safe_Mobile": "Automatic",
+		"Tweaked_Desktop": "Automatic",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "World Wide Web Publishing Service **",
+		"Service_Name": "W3SVC",
+		"DEFAULT_Windows_10_Home": "Not Installed (Automatic",
+		"DEFAULT_Windows_10_Pro": " Running)",
+		"Safe_Desktop": "Not Installed (Automatic",
+		"Safe_Mobile": " Running)",
+		"Tweaked_Desktop": "Not Installed",
+		"Quick_Notes": "Not Installed"
+	},
+	{
+		"Display_Name": "WWAN AutoConfig",
+		"Service_Name": "WwanSvc",
+		"DEFAULT_Windows_10_Home": "Manual",
+		"DEFAULT_Windows_10_Pro": "Manual",
+		"Safe_Desktop": "Disabled *",
+		"Safe_Mobile": "Disabled *",
+		"Tweaked_Desktop": "Disabled *",
+		"Quick_Notes": "Mobile Network Connection (3G"
+	},
+	{
+		"Display_Name": "Xbox Accessory Management Service",
+		"Service_Name": "XboxGipSvc",
+		"DEFAULT_Windows_10_Home": "Manual (Trigger Start)",
+		"DEFAULT_Windows_10_Pro": "Manual (Trigger Start)",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": ""
+	},
+	{
+		"Display_Name": "Xbox Game Monitoring",
+		"Service_Name": "xbgm",
+		"DEFAULT_Windows_10_Home": "Manual (Trigger Start)",
+		"DEFAULT_Windows_10_Pro": "Manual (Trigger Start)",
+		"Safe_Desktop": "Manual",
+		"Safe_Mobile": "Manual",
+		"Tweaked_Desktop": "Manual",
+		"Quick_Notes": "Cannot be disabled via services.msc"
+	},
+	{
+		"Display_Name": "Xbox Live Auth Manager",
+		"Service_Name": "XblAuthManager",
+		"DEFAULT_Windows_10_Home": "Manual",
+		"DEFAULT_Windows_10_Pro": "Manual",
+		"Safe_Desktop": "Disabled *",
+		"Safe_Mobile": "Disabled *",
+		"Tweaked_Desktop": "Disabled *",
+		"Quick_Notes": "Leave in Manual if using any XBOX console PC to Console functions."
+	},
+	{
+		"Display_Name": "Xbox Live Game Save",
+		"Service_Name": "XblGameSave",
+		"DEFAULT_Windows_10_Home": "Manual (Trigger Start)",
+		"DEFAULT_Windows_10_Pro": "Manual (Trigger Start)",
+		"Safe_Desktop": "Disabled *",
+		"Safe_Mobile": "Disabled *",
+		"Tweaked_Desktop": "Disabled *",
+		"Quick_Notes": "Leave in Manual if using any XBOX console PC to Console functions."
+	},
+	{
+		"Display_Name": "Xbox Live Networking Service",
+		"Service_Name": "XboxNetApiSvc",
+		"DEFAULT_Windows_10_Home": "Manual",
+		"DEFAULT_Windows_10_Pro": "Manual",
+		"Safe_Desktop": "Disabled *",
+		"Safe_Mobile": "Disabled *",
+		"Tweaked_Desktop": "Disabled *",
+		"Quick_Notes": "Leave in Manual if using any XBOX console PC to Console functions."
+	},
+	{
+		"Display_Name": ""
+	}
+]

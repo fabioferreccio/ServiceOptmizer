@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.438
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceOptimizer", "ServiceOptimizer\ServiceOptimizer.csproj", "{9AB15ACD-F02F-40D2-8F81-D32FBD9DFD4E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9AB15ACD-F02F-40D2-8F81-D32FBD9DFD4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AB15ACD-F02F-40D2-8F81-D32FBD9DFD4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AB15ACD-F02F-40D2-8F81-D32FBD9DFD4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AB15ACD-F02F-40D2-8F81-D32FBD9DFD4E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {14517355-67DB-429E-97EE-2628CF1A1107}
+	EndGlobalSection
+EndGlobal

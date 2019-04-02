@@ -84,13 +84,14 @@ namespace ServiceOptimizer.Classes
         {
             ServiceController[] scServices = ServiceController.GetServices();
             
-            Console.WriteLine(String.Format("{0} | {1}", "Nome do Serviço".PadRight(70, ' '), "Status".PadRight(10, ' ')));
-            Console.WriteLine("".PadRight(80, '-'));
+            Console.WriteLine(String.Format("| {0} | {1} | {2} |", "Nome do Serviço".PadRight(70, ' '), "Status".PadRight(10, ' '), "Inicialização".PadRight(15, ' ')));
+            Console.WriteLine("".PadRight(105, '-'));
             foreach (ServiceController scTemp in scServices)
             {
-                Console.WriteLine(String.Format("{0} | {1}", scTemp.ServiceName.PadRight(70, ' '), scTemp.Status.ToString().PadRight(10, ' ')));
+                Console.WriteLine(String.Format("| {0} | {1} | {2} |", scTemp.ServiceName.PadRight(70, ' '), scTemp.Status.ToString().PadRight(10, ' '), scTemp.StartType.ToString().PadRight(15, ' ')));
             }
-            Console.WriteLine("\n\n");
+            Console.WriteLine("".PadRight(105, '-'));
+            Console.WriteLine("\n");
         }
 
         public static void ChangeStartMode(string serviceName, ServiceStartMode mode)

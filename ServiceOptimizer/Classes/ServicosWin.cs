@@ -2,6 +2,10 @@
 using System.ServiceProcess;
 using System.Diagnostics;
 using System.Threading;
+using ServiceOptimizer.Classes.Modelo;
+using System.Collections.Generic;
+using System.IO;
+using Newtonsoft.Json;
 
 namespace ServiceOptimizer.Classes
 {
@@ -83,15 +87,25 @@ namespace ServiceOptimizer.Classes
         public static void ListService()
         {
             ServiceController[] scServices = ServiceController.GetServices();
+            List<ServiceClientModel> model = new List<ServiceClientModel>();
             
             Console.WriteLine(String.Format("| {0} | {1} | {2} |", "Nome do Serviço".PadRight(70, ' '), "Status".PadRight(10, ' '), "Inicialização".PadRight(15, ' ')));
             Console.WriteLine("".PadRight(105, '-'));
             foreach (ServiceController scTemp in scServices)
             {
                 Console.WriteLine(String.Format("| {0} | {1} | {2} |", scTemp.ServiceName.PadRight(70, ' '), scTemp.Status.ToString().PadRight(10, ' '), scTemp.StartType.ToString().PadRight(15, ' ')));
+                model.Add(new ServiceClientModel {
+                    Display_Name = scTemp.DisplayName,
+                    Service_Name = scTemp.ServiceName,
+                    Status = scTemp.Status.ToString(),
+                    StartType = scTemp.StartType.ToString()
+                });
             }
             Console.WriteLine("".PadRight(105, '-'));
             Console.WriteLine("\n");
+
+            // serialize JSON to a string and then write string to a file
+            File.WriteAllText(@"ConfigUser.json", JsonConvert.SerializeObject(model));
         }
 
         public static void ChangeStartMode(string serviceName, ServiceStartMode mode)

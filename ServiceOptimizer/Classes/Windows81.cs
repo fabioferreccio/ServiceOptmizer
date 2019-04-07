@@ -25,10 +25,10 @@ namespace ServiceOptimizer.Classes
             isByte = Byte.TryParse(Console.ReadLine(), out op);
         }
 
-        public void loadJSON(ref List<BlackViperModel> listWin10)
+        public void loadJSON(ref List<BlackViperModel> listWin81)
         {
             string sourceFile = @"ConfigJSON_w81.json";
-            listWin10 = JsonConvert.DeserializeObject<List<BlackViperModel>>(File.ReadAllText(sourceFile));
+            listWin81 = JsonConvert.DeserializeObject<List<BlackViperModel>>(File.ReadAllText(sourceFile));
         }
 
         public void loadJSON(ref List<ServiceClientModel> listBackupUser)
@@ -77,9 +77,9 @@ namespace ServiceOptimizer.Classes
             op = 0;
         }
 
-        public void setDefault_WindowsHome(ref byte op, List<BlackViperModel> listWin10)
+        public void setDefault_WindowsHome(ref byte op, List<BlackViperModel> listWin81)
         {
-            foreach (BlackViperModel item in listWin10)
+            foreach (BlackViperModel item in listWin81)
             {
                 string nameService = String.Empty;
                 if (item.Service_Name != null && item.Service_Name.Contains("_"))
@@ -91,15 +91,15 @@ namespace ServiceOptimizer.Classes
                     nameService = item.Service_Name;
                 }
 
-                if (item.DEFAULT_Windows81 != null && item.DEFAULT_Windows81.Contains("Manual"))
+                if (item.DEFAULT_Home != null && item.DEFAULT_Home.Contains("Manual"))
                 {
                     ServicosWin.ChangeStartMode(nameService, System.ServiceProcess.ServiceStartMode.Manual);
                 }
-                else if (item.DEFAULT_Windows81 != null && item.DEFAULT_Windows81.Contains("Automatic"))
+                else if (item.DEFAULT_Home != null && item.DEFAULT_Home.Contains("Automatic"))
                 {
                     ServicosWin.ChangeStartMode(nameService, System.ServiceProcess.ServiceStartMode.Automatic);
                 }
-                else if (item.DEFAULT_Windows81 != null && item.DEFAULT_Windows81.Contains("Disabled"))
+                else if (item.DEFAULT_Home != null && item.DEFAULT_Home.Contains("Disabled"))
                 {
                     ServicosWin.ChangeStartMode(nameService, System.ServiceProcess.ServiceStartMode.Disabled);
                 }
@@ -111,9 +111,9 @@ namespace ServiceOptimizer.Classes
             op = 0;
         }
 
-        public void setDefault_WindowsPro(ref byte op, List<BlackViperModel> listWin10)
+        public void setDefault_WindowsPro(ref byte op, List<BlackViperModel> listWin81)
         {
-            foreach (BlackViperModel item in listWin10)
+            foreach (BlackViperModel item in listWin81)
             {
                 string nameService = String.Empty;
                 if (item.Service_Name != null && item.Service_Name.Contains("_"))
@@ -125,15 +125,15 @@ namespace ServiceOptimizer.Classes
                     nameService = item.Service_Name;
                 }
 
-                if (item.DEFAULT_Windows81_Pro != null && item.DEFAULT_Windows81_Pro.Contains("Manual"))
+                if (item.DEFAULT_Professional != null && item.DEFAULT_Professional.Contains("Manual"))
                 {
                     ServicosWin.ChangeStartMode(nameService, System.ServiceProcess.ServiceStartMode.Manual);
                 }
-                else if (item.DEFAULT_Windows81_Pro != null && item.DEFAULT_Windows81_Pro.Contains("Automatic"))
+                else if (item.DEFAULT_Professional != null && item.DEFAULT_Professional.Contains("Automatic"))
                 {
                     ServicosWin.ChangeStartMode(nameService, System.ServiceProcess.ServiceStartMode.Automatic);
                 }
-                else if (item.DEFAULT_Windows81_Pro != null && item.DEFAULT_Windows81_Pro.Contains("Disabled"))
+                else if (item.DEFAULT_Professional != null && item.DEFAULT_Professional.Contains("Disabled"))
                 {
                     ServicosWin.ChangeStartMode(nameService, System.ServiceProcess.ServiceStartMode.Disabled);
                 }
@@ -145,9 +145,9 @@ namespace ServiceOptimizer.Classes
             op = 0;
         }
 
-        public void setDefault_WindowsEnterprise(ref byte op, List<BlackViperModel> listWin10)
+        public void setDefault_WindowsEnterprise(ref byte op, List<BlackViperModel> listWin81)
         {
-            foreach (BlackViperModel item in listWin10)
+            foreach (BlackViperModel item in listWin81)
             {
                 string nameService = String.Empty;
                 if (item.Service_Name != null && item.Service_Name.Contains("_"))
@@ -159,15 +159,15 @@ namespace ServiceOptimizer.Classes
                     nameService = item.Service_Name;
                 }
 
-                if (item.DEFAULT_Windows81_Enterprise != null && item.DEFAULT_Windows81_Enterprise.Contains("Manual"))
+                if (item.DEFAULT_Enterprise != null && item.DEFAULT_Enterprise.Contains("Manual"))
                 {
                     ServicosWin.ChangeStartMode(nameService, System.ServiceProcess.ServiceStartMode.Manual);
                 }
-                else if (item.DEFAULT_Windows81_Enterprise != null && item.DEFAULT_Windows81_Enterprise.Contains("Automatic"))
+                else if (item.DEFAULT_Enterprise != null && item.DEFAULT_Enterprise.Contains("Automatic"))
                 {
                     ServicosWin.ChangeStartMode(nameService, System.ServiceProcess.ServiceStartMode.Automatic);
                 }
-                else if (item.DEFAULT_Windows81_Enterprise != null && item.DEFAULT_Windows81_Enterprise.Contains("Disabled"))
+                else if (item.DEFAULT_Enterprise != null && item.DEFAULT_Enterprise.Contains("Disabled"))
                 {
                     ServicosWin.ChangeStartMode(nameService, System.ServiceProcess.ServiceStartMode.Disabled);
                 }
@@ -179,9 +179,9 @@ namespace ServiceOptimizer.Classes
             op = 0;
         }
 
-        public void setBlackViper_Safe(ref byte op, List<BlackViperModel> listWin10)
+        public void setBlackViper_Safe(ref byte op, List<BlackViperModel> listWin81)
         {
-            foreach (BlackViperModel item in listWin10)
+            foreach (BlackViperModel item in listWin81)
             {
                 string nameService = String.Empty;
                 if (item.Service_Name != null && item.Service_Name.Contains("_"))

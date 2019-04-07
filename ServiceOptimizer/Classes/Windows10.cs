@@ -92,15 +92,15 @@ namespace ServiceOptimizer.Classes
                     nameService = item.Service_Name;
                 }
 
-                if (item.DEFAULT_Windows_10_Home != null && item.DEFAULT_Windows_10_Home.Contains("Manual"))
+                if (item.DEFAULT_Home != null && item.DEFAULT_Home.Contains("Manual"))
                 {
                     ServicosWin.ChangeStartMode(nameService, System.ServiceProcess.ServiceStartMode.Manual);
                 }
-                else if (item.DEFAULT_Windows_10_Home != null && item.DEFAULT_Windows_10_Home.Contains("Automatic"))
+                else if (item.DEFAULT_Home != null && item.DEFAULT_Home.Contains("Automatic"))
                 {
                     ServicosWin.ChangeStartMode(nameService, System.ServiceProcess.ServiceStartMode.Automatic);
                 }
-                else if (item.DEFAULT_Windows_10_Home != null && item.DEFAULT_Windows_10_Home.Contains("Disabled"))
+                else if (item.DEFAULT_Home != null && item.DEFAULT_Home.Contains("Disabled"))
                 {
                     ServicosWin.ChangeStartMode(nameService, System.ServiceProcess.ServiceStartMode.Disabled);
                 }
@@ -126,15 +126,15 @@ namespace ServiceOptimizer.Classes
                     nameService = item.Service_Name;
                 }
 
-                if (item.DEFAULT_Windows_10_Pro != null && item.DEFAULT_Windows_10_Pro.Contains("Manual"))
+                if (item.DEFAULT_Professional != null && item.DEFAULT_Professional.Contains("Manual"))
                 {
                     ServicosWin.ChangeStartMode(nameService, System.ServiceProcess.ServiceStartMode.Manual);
                 }
-                else if (item.DEFAULT_Windows_10_Pro != null && item.DEFAULT_Windows_10_Pro.Contains("Automatic"))
+                else if (item.DEFAULT_Professional != null && item.DEFAULT_Professional.Contains("Automatic"))
                 {
                     ServicosWin.ChangeStartMode(nameService, System.ServiceProcess.ServiceStartMode.Automatic);
                 }
-                else if (item.DEFAULT_Windows_10_Pro != null && item.DEFAULT_Windows_10_Pro.Contains("Disabled"))
+                else if (item.DEFAULT_Professional != null && item.DEFAULT_Professional.Contains("Disabled"))
                 {
                     ServicosWin.ChangeStartMode(nameService, System.ServiceProcess.ServiceStartMode.Disabled);
                 }
@@ -228,15 +228,15 @@ namespace ServiceOptimizer.Classes
                     nameService = item.Service_Name;
                 }
 
-                if (item.Safe_Desktop != null && item.Tweaked_Desktop.Contains("Manual"))
+                if (item.Tweaked != null && item.Tweaked.Contains("Manual"))
                 {
                     ServicosWin.ChangeStartMode(nameService, System.ServiceProcess.ServiceStartMode.Manual);
                 }
-                else if (item.Safe_Desktop != null && item.Tweaked_Desktop.Contains("Automatic"))
+                else if (item.Tweaked != null && item.Tweaked.Contains("Automatic"))
                 {
                     ServicosWin.ChangeStartMode(nameService, System.ServiceProcess.ServiceStartMode.Automatic);
                 }
-                else if (item.Safe_Desktop != null && item.Tweaked_Desktop.Contains("Disabled"))
+                else if (item.Tweaked != null && item.Tweaked.Contains("Disabled"))
                 {
                     ServicosWin.ChangeStartMode(nameService, System.ServiceProcess.ServiceStartMode.Disabled);
                 }

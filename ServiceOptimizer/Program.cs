@@ -1,16 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.IO;
 using System.Reflection;
 using System.Security.Principal;
-using System.Text;
-using System.Linq;
-using CsvHelper;
 using ServiceOptimizer.Classes;
 using ServiceOptimizer.Classes.Modelo;
-using static ServiceOptimizer.Classes.Modelo.CSVRepository;
-using Newtonsoft.Json;
 
 namespace ServiceOptimizer
 {
@@ -28,59 +22,246 @@ namespace ServiceOptimizer
 
         static void Main(string[] args)
         {
-            byte? op = null;
-            if (runOnAdministratorMode())
-            {
-                CarregarJSON_BlackViper(windowsOrUserMode.windows);
+            byte op = 255;
+            byte so = 255;
+            bool isByte = true;
+            bool json_isLoaded = false;
 
-                do
-                {
-                    Console.WriteLine($"Welcome to the service optimizer: \n");
-                    Console.WriteLine("1- Lists and Backup - Your Windows Services.");
-                    Console.WriteLine("2- BlackViper - Safe for Desktop.");
-                    Console.WriteLine("3- BlackViper - Safe for Laptop or Tablet.");
-                    Console.WriteLine("4- BlackViper - Tweaked for Desktop.");
-                    Console.WriteLine("5- Restore client Backup.");
-                    Console.WriteLine("0- Exit.");
-                    
-                    Console.Write("\nSelecione uma opção: ");
-                    op = Convert.ToByte(Console.ReadLine());
-                    switch (op)
-                    {
-                        case 1:
-                            Console.Clear();
-                            ServicosWin.ListService();
-                            op = null;
-                            break;
-                        case 2:
-                            Console.Clear();
-                            BlackViper_SafeForDesktop();
-                            op = null;
-                            break;
-                        case 3:
-                            Console.Clear();
-                            BlackViper_SafeForLaptopOrTablet();
-                            op = null;
-                            break;
-                        case 4:
-                            Console.Clear();
-                            BlackViper_TweakedForDesktop();
-                            op = null;
-                            break;
-                        case 5:
-                            Console.Clear();
-                            Restore_ClientBackup();
-                            op = null;
-                            break;
-                    }
-                } while (op != 0);
-            }
-            else
+            do
             {
-                Console.WriteLine("Software não foi executado como administrador");
-                op = (byte)Console.Read();
-            }
-            
+                Console.Clear();
+                Console.WriteLine($"Welcome to the service optimizer - {Environment.OSVersion} {Environment.NewLine}");
+                Console.WriteLine($"Select the desired operating system: {Environment.NewLine}");
+                Console.WriteLine($"1 - Windows 10");
+                Console.WriteLine($"2 - Windows 8.1");
+                Console.WriteLine($"3 - Windows 8");
+                Console.WriteLine($"4 - Windows 7");
+                Console.WriteLine($"0 - Exit");
+
+                Console.Write($"{Environment.NewLine}Select an option: ");
+                Console.Out.Flush();
+                isByte = Byte.TryParse(Console.ReadLine(), out so);
+
+                Console.Clear();
+                Console.WriteLine($"Welcome to the service optimizer - {Environment.OSVersion} {Environment.NewLine}");
+
+                switch (so)
+                {
+                    case 0:
+                        break;
+                    case 1:
+                        do
+                        {
+                            Windows10 referencia = new Windows10(ref op);
+                            if (!json_isLoaded && (op > 0 && op < 8))
+                            {
+                                referencia.loadJSON(ref list);
+                                json_isLoaded = true;
+                            }
+
+                            switch (op)
+                            {
+                                case 1:
+                                    referencia.listAndBackup_WindowsServices(ref op);
+                                    break;
+                                case 2:
+                                    referencia.setBlackViper_SafeForDesktop(ref op, list);
+                                    break;
+                                case 3:
+                                    referencia.setBlackViper_SafeForLaptopOrTablet(ref op, list);
+                                    break;
+                                case 4:
+                                    referencia.setBlackViper_TweakedForDesktop(ref op, list);
+                                    break;
+                                case 5:
+                                    referencia.setDefault_WindowsHome(ref op, list);
+                                    break;
+                                case 6:
+                                    referencia.setDefault_WindowsPro(ref op, list);
+                                    break;
+                                case 7:
+                                    referencia.loadJSON(ref listUser);
+                                    referencia.Restore_WindowsServiceBackup(ref op, listUser);
+                                    break;
+                                case 8:
+                                    referencia.convert_CsvToJson(ref list, ref op);
+                                    json_isLoaded = true;
+                                    Console.Clear();
+                                    break;
+                            }
+
+                            if (op != 255 && op != 0)
+                            {
+                                Console.WriteLine($"{Environment.NewLine}{"".PadRight(105, '*')}");
+                                Console.WriteLine($"{Environment.NewLine} Processo Finalizado!");
+                                System.Threading.Thread.Sleep(5000);
+                            }
+                        } while (op != 0);
+                        json_isLoaded = false;
+                        break;
+                    case 2:
+                        do
+                        {
+                            Windows81 referencia = new Windows81(ref op);
+                            if (!json_isLoaded && (op > 0 && op < 7))
+                            {
+                                referencia.loadJSON(ref list);
+                                json_isLoaded = true;
+                            }
+
+                            switch (op)
+                            {
+                                case 1:
+                                    referencia.listAndBackup_WindowsServices(ref op);
+                                    break;
+                                case 2:
+                                    referencia.setDefault_WindowsHome(ref op, list);
+                                    break;
+                                case 3:
+                                    referencia.setDefault_WindowsPro(ref op, list);
+                                    break;
+                                case 4:
+                                    referencia.setDefault_WindowsEnterprise(ref op, list);
+                                    break;
+                                case 5:
+                                    referencia.setBlackViper_Safe(ref op, list);
+                                    break;
+                                case 6:
+                                    referencia.loadJSON(ref listUser);
+                                    referencia.Restore_WindowsServiceBackup(ref op, listUser);
+                                    break;
+                                case 7:
+                                    referencia.convert_CsvToJson(ref list, ref op);
+                                    json_isLoaded = true;
+                                    Console.Clear();
+                                    break;
+                            }
+
+                            if (op != 255 && op != 0)
+                            {
+                                Console.WriteLine($"{Environment.NewLine}{"".PadRight(105, '*')}");
+                                Console.WriteLine($"{Environment.NewLine} Processo Finalizado!");
+                                System.Threading.Thread.Sleep(5000);
+                            }
+                        } while (op != 0);
+                        json_isLoaded = false;
+                        break;
+                    case 3:
+                        do
+                        {
+                            Windows8 referencia = new Windows8(ref op);
+                            if (!json_isLoaded && (op > 0 && op < 7))
+                            {
+                                referencia.loadJSON(ref list);
+                                json_isLoaded = true;
+                            }
+
+                            switch (op)
+                            {
+                                case 1:
+                                    referencia.listAndBackup_WindowsServices(ref op);
+                                    break;
+                                case 2:
+                                    referencia.setDefault_WindowsHome(ref op, list);
+                                    break;
+                                case 3:
+                                    referencia.setDefault_WindowsPro(ref op, list);
+                                    break;
+                                case 4:
+                                    referencia.setDefault_WindowsEnterprise(ref op, list);
+                                    break;
+                                case 5:
+                                    referencia.setBlackViper_Safe(ref op, list);
+                                    break;
+                                case 6:
+                                    referencia.loadJSON(ref listUser);
+                                    referencia.Restore_WindowsServiceBackup(ref op, listUser);
+                                    break;
+                                case 7:
+                                    referencia.convert_CsvToJson(ref list, ref op);
+                                    json_isLoaded = true;
+                                    Console.Clear();
+                                    break;
+                            }
+
+                            if (op != 255 && op != 0)
+                            {
+                                Console.WriteLine($"{Environment.NewLine}{"".PadRight(105, '*')}");
+                                Console.WriteLine($"{Environment.NewLine} Processo Finalizado!");
+                                System.Threading.Thread.Sleep(5000);
+                            }
+                        } while (op != 0);
+                        json_isLoaded = false;
+                        break;
+                    case 4:
+                        do
+                        {
+                            Windows7 referencia = new Windows7(ref op);
+                            if (!json_isLoaded && (op > 0 && op < 12))
+                            {
+                                referencia.loadJSON(ref list);
+                                json_isLoaded = true;
+                            }
+
+                            switch (op)
+                            {
+                                case 1:
+                                    referencia.listAndBackup_WindowsServices(ref op);
+                                    break;
+                                case 2:
+                                    referencia.setDefault_WindowsSTARTER(ref op, list);
+                                    break;
+                                case 3:
+                                    referencia.setDefault_WindowsHomeBasic(ref op, list);
+                                    break;
+                                case 4:
+                                    referencia.setDefault_WindowsHomePremiun(ref op, list);
+                                    break;
+                                case 5:
+                                    referencia.setDefault_WindowsProfissional(ref op, list);
+                                    break;
+                                case 6:
+                                    referencia.setDefault_WindowsUltimate(ref op, list);
+                                    break;
+                                case 7:
+                                    referencia.setDefault_WindowsEnterprise(ref op, list);
+                                    break;
+                                case 8:
+                                    referencia.setBlackViper_Safe(ref op, list);
+                                    break;
+                                case 9:
+                                    referencia.setBlackViper_Tweaked(ref op, list);
+                                    break;
+                                case 10:
+                                    referencia.setBlackViper_BareBones(ref op, list);
+                                    break;
+                                case 11:
+                                    referencia.loadJSON(ref listUser);
+                                    referencia.Restore_WindowsServiceBackup(ref op, listUser);
+                                    break;
+                                case 12:
+                                    referencia.convert_CsvToJson(ref list, ref op);
+                                    json_isLoaded = true;
+                                    Console.Clear();
+                                    break;
+                            }
+
+                            if (op != 255 && op != 0)
+                            {
+                                Console.WriteLine($"{Environment.NewLine}{"".PadRight(105, '*')}");
+                                Console.WriteLine($"{Environment.NewLine} Processo Finalizado!");
+                                System.Threading.Thread.Sleep(5000);
+                            }
+                        } while (op != 0);
+                        json_isLoaded = false;
+                        break;
+                    default:
+                        Console.WriteLine("Not Yet implemented, Sorry!!");
+                        System.Threading.Thread.Sleep(5000);
+                        break;
+                }
+
+            } while (so != 0);
         }
 
         public static bool runOnAdministratorMode()
@@ -90,8 +271,8 @@ namespace ServiceOptimizer
             if (!administrativeMode)
             {
                 ProcessStartInfo startInfo = new ProcessStartInfo();
+                startInfo.FileName = Environment.ExpandEnvironmentVariables("%SystemRoot%") + Assembly.GetExecutingAssembly().CodeBase; ;
                 startInfo.Verb = "runas";
-                startInfo.FileName = Assembly.GetExecutingAssembly().CodeBase;
                 startInfo.UseShellExecute = true;
                 startInfo.WorkingDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Windows);
                 try
@@ -99,189 +280,15 @@ namespace ServiceOptimizer
                     Process.Start(startInfo);
                     return true;
                 }
-                catch
+                catch (Exception ex)
                 {
-                    throw new Exception("Não foi possível conceder acesso como Admin" + Environment.NewLine + "As operações realizadas poderão ter Acesso Negado !");
+                    Console.WriteLine($"{Environment.NewLine}{"".PadRight(105, '*')}");
+                    Console.WriteLine($"{Environment.NewLine}Não foi possível conceder acesso como Admin. As operações realizadas poderão ter Acesso Negado!");
+                    Console.WriteLine($"{Environment.NewLine}Error: {ex.Message}");
+                    Console.WriteLine($"{Environment.NewLine}{"".PadRight(105, '*')}");
                 }
             }
             return administrativeMode;
-        }
-
-        public static void CarregarCSV_BlackViper()
-        {
-            try
-            {
-                string sourceFile = @"ConfigCSV.csv";
-                using (TextReader fileReader = File.OpenText(sourceFile))
-                {
-                    var csv = new CsvReader(fileReader);
-                    csv.Configuration.HasHeaderRecord = true;
-                    csv.Configuration.Delimiter = ",";
-                    csv.Configuration.Encoding = Encoding.UTF8;
-
-                    csv.Configuration.RegisterClassMap(new StrBlackViperClassMap());
-                    list = csv.GetRecords<BlackViperModel>().ToList<BlackViperModel>();
-                }
-            }
-            catch(Exception ex)
-            {
-                Console.WriteLine("Erro ao executar Leitura do Arquivo: {0}", ex.Message);
-            }
-        }
-
-        public static void CarregarJSON_BlackViper(windowsOrUserMode mode)
-        {
-            string sourceFile = string.Empty;
-            try
-            {
-                switch (mode)
-                {
-                    case windowsOrUserMode.windows:
-                        sourceFile = @"ConfigJSON.json";
-                        list = JsonConvert.DeserializeObject<List<BlackViperModel>>(File.ReadAllText(sourceFile));
-                        break;
-                    case windowsOrUserMode.usuario:
-                        sourceFile = @"ConfigUser.json";
-                        listUser = JsonConvert.DeserializeObject<List<ServiceClientModel>>(File.ReadAllText(sourceFile));
-                        break;
-                }
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("Erro ao executar Leitura do Arquivo: {0}", ex.Message);
-            }
-        }
-
-        public static void BlackViper_SafeForDesktop()
-        {
-            foreach(BlackViperModel svcSafe in list)
-            {
-                string nameService = String.Empty;
-                if (svcSafe.Service_Name.Contains("_"))
-                {
-                    nameService = svcSafe.Service_Name.Split('_')[0];
-                }
-                else
-                {
-                    nameService = svcSafe.Service_Name;
-                }
-
-                if (svcSafe.Safe_Desktop.Contains("Manual"))
-                {
-                    ServicosWin.ChangeStartMode(nameService, System.ServiceProcess.ServiceStartMode.Manual);
-                }
-                else if (svcSafe.Safe_Desktop.Contains("Automatic"))
-                {
-                    ServicosWin.ChangeStartMode(nameService, System.ServiceProcess.ServiceStartMode.Automatic);
-                }
-                else if (svcSafe.Safe_Desktop.Contains("Disabled"))
-                {
-                    ServicosWin.ChangeStartMode(nameService, System.ServiceProcess.ServiceStartMode.Disabled);
-                }
-                else
-                {
-                    Console.WriteLine("SVC_NAME: {0} Não Configurado ou Instalado.", nameService);
-                }
-            }
-        }
-
-        public static void BlackViper_SafeForLaptopOrTablet()
-        {
-            foreach (BlackViperModel svcSafe in list)
-            {
-                string nameService = String.Empty;
-                if (svcSafe.Service_Name.Contains("_"))
-                {
-                    nameService = svcSafe.Service_Name.Split('_')[0];
-                }
-                else
-                {
-                    nameService = svcSafe.Service_Name;
-                }
-
-                if (svcSafe.Safe_Mobile.Contains("Manual"))
-                {
-                    ServicosWin.ChangeStartMode(nameService, System.ServiceProcess.ServiceStartMode.Manual);
-                }
-                else if (svcSafe.Safe_Mobile.Contains("Automatic"))
-                {
-                    ServicosWin.ChangeStartMode(nameService, System.ServiceProcess.ServiceStartMode.Automatic);
-                }
-                else if (svcSafe.Safe_Mobile.Contains("Disabled"))
-                {
-                    ServicosWin.ChangeStartMode(nameService, System.ServiceProcess.ServiceStartMode.Disabled);
-                }
-                else
-                {
-                    Console.WriteLine("SVC_NAME: {0} Não Configurado ou Instalado.", nameService);
-                }
-            }
-        }
-
-        public static void BlackViper_TweakedForDesktop()
-        {
-            foreach (BlackViperModel svcSafe in list)
-            {
-                string nameService = String.Empty;
-                if (svcSafe.Service_Name.Contains("_"))
-                {
-                    nameService = svcSafe.Service_Name.Split('_')[0];
-                }
-                else
-                {
-                    nameService = svcSafe.Service_Name;
-                }
-
-                if (svcSafe.Tweaked_Desktop.Contains("Manual"))
-                {
-                    ServicosWin.ChangeStartMode(nameService, System.ServiceProcess.ServiceStartMode.Manual);
-                }
-                else if (svcSafe.Tweaked_Desktop.Contains("Automatic"))
-                {
-                    ServicosWin.ChangeStartMode(nameService, System.ServiceProcess.ServiceStartMode.Automatic);
-                }
-                else if (svcSafe.Tweaked_Desktop.Contains("Disabled"))
-                {
-                    ServicosWin.ChangeStartMode(nameService, System.ServiceProcess.ServiceStartMode.Disabled);
-                }
-                else
-                {
-                    Console.WriteLine("SVC_NAME: {0} Não Configurado ou Instalado.", nameService);
-                }
-            }
-        }
-
-        public static void Restore_ClientBackup()
-        {
-            foreach (ServiceClientModel svcSafe in listUser)
-            {
-                string nameService = String.Empty;
-                if (svcSafe.Service_Name.Contains("_"))
-                {
-                    nameService = svcSafe.Service_Name.Split('_')[0];
-                }
-                else
-                {
-                    nameService = svcSafe.Service_Name;
-                }
-
-                if (svcSafe.StartType.Contains("Manual"))
-                {
-                    ServicosWin.ChangeStartMode(nameService, System.ServiceProcess.ServiceStartMode.Manual);
-                }
-                else if (svcSafe.StartType.Contains("Automatic"))
-                {
-                    ServicosWin.ChangeStartMode(nameService, System.ServiceProcess.ServiceStartMode.Automatic);
-                }
-                else if (svcSafe.StartType.Contains("Disabled"))
-                {
-                    ServicosWin.ChangeStartMode(nameService, System.ServiceProcess.ServiceStartMode.Disabled);
-                }
-                else
-                {
-                    Console.WriteLine("SVC_NAME: {0} Não Configurado ou Instalado.", nameService);
-                }
-            }
         }
     }
 }

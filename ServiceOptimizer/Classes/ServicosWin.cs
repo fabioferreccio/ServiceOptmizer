@@ -6,6 +6,7 @@ using ServiceOptimizer.Classes.Modelo;
 using System.Collections.Generic;
 using System.IO;
 using Newtonsoft.Json;
+using System.Text;
 
 namespace ServiceOptimizer.Classes
 {
@@ -126,14 +127,17 @@ namespace ServiceOptimizer.Classes
                         break;
                 }
             }
-            catch
+            catch(Exception ex)
             {
-                throw;
+                Console.WriteLine($"Error [{serviceName}]: {ex.Message}");
             }
         }
 
         public static bool runInCMD(string path, ProcessWindowStyle windowStyleMode = ProcessWindowStyle.Hidden)
         {
+            int lineCount = 0;
+            bool result = false;
+            StringBuilder output = new StringBuilder();
             var process = new Process();
             process.StartInfo.FileName = Environment.ExpandEnvironmentVariables("%SystemRoot%") + @"\System32\cmd.exe";
             process.StartInfo.Arguments = $@"/K {path}";
@@ -141,16 +145,32 @@ namespace ServiceOptimizer.Classes
             process.StartInfo.CreateNoWindow = true;
             process.StartInfo.UseShellExecute = false;
             process.StartInfo.RedirectStandardOutput = true;
-            process.OutputDataReceived += (sender, data) =>
+            process.OutputDataReceived += new DataReceivedEventHandler((sender, e) =>
             {
-                Console.WriteLine(data.Data);
-            };
+                // Prepend line numbers to each line of the output.
+                if (!String.IsNullOrEmpty(e.Data))
+                {
+                    lineCount++;
+                    output.Append("\n[" + lineCount + "]: " + e.Data);
+                }
+            });
             process.StartInfo.RedirectStandardError = true;
-            process.ErrorDataReceived += (sender, data) =>
+            process.ErrorDataReceived += new DataReceivedEventHandler((sender, e) =>
             {
-                Console.WriteLine(data.Data);
-            };
-            return process.Start();
+                // Prepend line numbers to each line of the output.
+                if (!String.IsNullOrEmpty(e.Data))
+                {
+                    lineCount++;
+                    output.Append("\n[" + lineCount + "]: " + e.Data);
+                }
+            });
+
+            result = process.Start();
+            
+            Console.WriteLine(output);
+            process.Close();
+            
+            return result;
         }
     }
 }

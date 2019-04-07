@@ -1,8 +1,12 @@
-﻿using Newtonsoft.Json;
+﻿using CsvHelper;
+using Newtonsoft.Json;
 using ServiceOptimizer.Classes.Modelo;
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Text;
+using static ServiceOptimizer.Classes.Modelo.CSVRepository;
+using System.Linq;
 
 namespace ServiceOptimizer.Classes
 {
@@ -18,6 +22,7 @@ namespace ServiceOptimizer.Classes
             Console.WriteLine("4 - DEFAULT - Windows 8 [ENTERPRISE]");
             Console.WriteLine("5 - BlackViper - Safe");
             Console.WriteLine("6 - Restore client Backup");
+            Console.WriteLine("7 - Convert CSV (ConfigCSV_w8) to JSON");
             Console.WriteLine("0 - Exit");
 
             Console.Write($"{Environment.NewLine}Select an option: ");
@@ -211,6 +216,34 @@ namespace ServiceOptimizer.Classes
                 }
             }
             op = 0;
+        }
+
+        public void convert_CsvToJson(ref List<BlackViperModel> listWin8, ref byte op)
+        {
+            try
+            {
+                string sourceFile = @"ConfigCSV_w8.csv";
+                using (TextReader fileReader = File.OpenText(sourceFile))
+                {
+                    var csv = new CsvReader(fileReader);
+                    csv.Configuration.HasHeaderRecord = true;
+                    csv.Configuration.Delimiter = ",";
+                    csv.Configuration.Encoding = Encoding.UTF8;
+
+                    csv.Configuration.RegisterClassMap(new StrBlackViper_Win8_ClassMap());
+                    listWin8 = csv.GetRecords<BlackViperModel>().ToList<BlackViperModel>();
+                    File.WriteAllText(@"ConfigJSON_w8.json", JsonConvert.SerializeObject(listWin8, new JsonSerializerSettings
+                    {
+                        NullValueHandling = NullValueHandling.Ignore,
+                        MissingMemberHandling = MissingMemberHandling.Ignore
+                    }));
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Erro ao executar Leitura do Arquivo: {0}", ex.Message);
+            }
+            op = 255;
         }
     }
 }

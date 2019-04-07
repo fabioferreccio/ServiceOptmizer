@@ -1,16 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.IO;
 using System.Reflection;
 using System.Security.Principal;
-using System.Text;
-using System.Linq;
-using CsvHelper;
 using ServiceOptimizer.Classes;
 using ServiceOptimizer.Classes.Modelo;
-using static ServiceOptimizer.Classes.Modelo.CSVRepository;
-using Newtonsoft.Json;
 
 namespace ServiceOptimizer
 {
@@ -59,7 +53,7 @@ namespace ServiceOptimizer
                         do
                         {
                             Windows10 referencia = new Windows10(ref op);
-                            if (!json_isLoaded)
+                            if (!json_isLoaded && (op > 0 && op < 8))
                             {
                                 referencia.loadJSON(ref list);
                                 json_isLoaded = true;
@@ -89,9 +83,14 @@ namespace ServiceOptimizer
                                     referencia.loadJSON(ref listUser);
                                     referencia.Restore_WindowsServiceBackup(ref op, listUser);
                                     break;
+                                case 8:
+                                    referencia.convert_CsvToJson(ref list, ref op);
+                                    json_isLoaded = true;
+                                    Console.Clear();
+                                    break;
                             }
 
-                            if(op != 255 && op != 0)
+                            if (op != 255 && op != 0)
                             {
                                 Console.WriteLine($"{Environment.NewLine}{"".PadRight(105, '*')}");
                                 Console.WriteLine($"{Environment.NewLine} Processo Finalizado!");
@@ -104,7 +103,7 @@ namespace ServiceOptimizer
                         do
                         {
                             Windows81 referencia = new Windows81(ref op);
-                            if (!json_isLoaded)
+                            if (!json_isLoaded && (op > 0 && op < 7))
                             {
                                 referencia.loadJSON(ref list);
                                 json_isLoaded = true;
@@ -130,6 +129,11 @@ namespace ServiceOptimizer
                                 case 6:
                                     referencia.loadJSON(ref listUser);
                                     referencia.Restore_WindowsServiceBackup(ref op, listUser);
+                                    break;
+                                case 7:
+                                    referencia.convert_CsvToJson(ref list, ref op);
+                                    json_isLoaded = true;
+                                    Console.Clear();
                                     break;
                             }
 
@@ -146,7 +150,7 @@ namespace ServiceOptimizer
                         do
                         {
                             Windows8 referencia = new Windows8(ref op);
-                            if (!json_isLoaded)
+                            if (!json_isLoaded && (op > 0 && op < 7))
                             {
                                 referencia.loadJSON(ref list);
                                 json_isLoaded = true;
@@ -172,6 +176,73 @@ namespace ServiceOptimizer
                                 case 6:
                                     referencia.loadJSON(ref listUser);
                                     referencia.Restore_WindowsServiceBackup(ref op, listUser);
+                                    break;
+                                case 7:
+                                    referencia.convert_CsvToJson(ref list, ref op);
+                                    json_isLoaded = true;
+                                    Console.Clear();
+                                    break;
+                            }
+
+                            if (op != 255 && op != 0)
+                            {
+                                Console.WriteLine($"{Environment.NewLine}{"".PadRight(105, '*')}");
+                                Console.WriteLine($"{Environment.NewLine} Processo Finalizado!");
+                                System.Threading.Thread.Sleep(5000);
+                            }
+                        } while (op != 0);
+                        json_isLoaded = false;
+                        break;
+                    case 4:
+                        do
+                        {
+                            Windows7 referencia = new Windows7(ref op);
+                            if (!json_isLoaded && (op > 0 && op < 12))
+                            {
+                                referencia.loadJSON(ref list);
+                                json_isLoaded = true;
+                            }
+
+                            switch (op)
+                            {
+                                case 1:
+                                    referencia.listAndBackup_WindowsServices(ref op);
+                                    break;
+                                case 2:
+                                    referencia.setDefault_WindowsSTARTER(ref op, list);
+                                    break;
+                                case 3:
+                                    referencia.setDefault_WindowsHomeBasic(ref op, list);
+                                    break;
+                                case 4:
+                                    referencia.setDefault_WindowsHomePremiun(ref op, list);
+                                    break;
+                                case 5:
+                                    referencia.setDefault_WindowsProfissional(ref op, list);
+                                    break;
+                                case 6:
+                                    referencia.setDefault_WindowsUltimate(ref op, list);
+                                    break;
+                                case 7:
+                                    referencia.setDefault_WindowsEnterprise(ref op, list);
+                                    break;
+                                case 8:
+                                    referencia.setBlackViper_Safe(ref op, list);
+                                    break;
+                                case 9:
+                                    referencia.setBlackViper_Tweaked(ref op, list);
+                                    break;
+                                case 10:
+                                    referencia.setBlackViper_BareBones(ref op, list);
+                                    break;
+                                case 11:
+                                    referencia.loadJSON(ref listUser);
+                                    referencia.Restore_WindowsServiceBackup(ref op, listUser);
+                                    break;
+                                case 12:
+                                    referencia.convert_CsvToJson(ref list, ref op);
+                                    json_isLoaded = true;
+                                    Console.Clear();
                                     break;
                             }
 
@@ -211,35 +282,13 @@ namespace ServiceOptimizer
                 }
                 catch (Exception ex)
                 {
-                    Console.WriteLine($"{Environment.NewLine}{"".PadRight(105,'*')}");
+                    Console.WriteLine($"{Environment.NewLine}{"".PadRight(105, '*')}");
                     Console.WriteLine($"{Environment.NewLine}Não foi possível conceder acesso como Admin. As operações realizadas poderão ter Acesso Negado!");
                     Console.WriteLine($"{Environment.NewLine}Error: {ex.Message}");
-                    Console.WriteLine($"{Environment.NewLine}{"".PadRight(105,'*')}");
+                    Console.WriteLine($"{Environment.NewLine}{"".PadRight(105, '*')}");
                 }
             }
             return administrativeMode;
-        }
-
-        public static void CarregarCSV_BlackViper()
-        {
-            try
-            {
-                string sourceFile = @"ConfigCSV.csv";
-                using (TextReader fileReader = File.OpenText(sourceFile))
-                {
-                    var csv = new CsvReader(fileReader);
-                    csv.Configuration.HasHeaderRecord = true;
-                    csv.Configuration.Delimiter = ",";
-                    csv.Configuration.Encoding = Encoding.UTF8;
-
-                    csv.Configuration.RegisterClassMap(new StrBlackViperClassMap());
-                    list = csv.GetRecords<BlackViperModel>().ToList<BlackViperModel>();
-                }
-            }
-            catch(Exception ex)
-            {
-                Console.WriteLine("Erro ao executar Leitura do Arquivo: {0}", ex.Message);
-            }
         }
     }
 }

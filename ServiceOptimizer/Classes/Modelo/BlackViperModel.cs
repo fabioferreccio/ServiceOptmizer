@@ -13,5 +13,11 @@ namespace ServiceOptimizer.Classes.Modelo
         public String Safe_Mobile { get; set; }
         public String Tweaked_Desktop { get; set; }
         public String Quick_Notes { get; set; }
+
+        // Win 8.1
+        public String DEFAULT_Windows81 { get; set; }
+        public String DEFAULT_Windows81_Pro { get; set; }
+        public String DEFAULT_Windows81_Enterprise { get; set; }
+        public String Safe { get; set; }
     }
 }

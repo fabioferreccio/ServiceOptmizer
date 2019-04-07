@@ -16,13 +16,16 @@
   </ItemGroup>
   
   <ItemGroup>
+    <Content Include="ConfigJSON_w81.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="ConfigJSON.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-	<Content Include="ConfigCSV.csv">
+    <Content Include="ConfigCSV.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-	<Content Include="ConfigXLSX.xlsx">
+    <Content Include="ConfigXLSX.xlsx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

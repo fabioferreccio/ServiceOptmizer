@@ -6,19 +6,18 @@ using System.IO;
 
 namespace ServiceOptimizer.Classes
 {
-    class Windows10
+    class Windows81
     {
         public Boolean isByte { get; set; }
 
-        public Windows10(ref byte op)
+        public Windows81(ref byte op)
         {
             Console.WriteLine("1 - Lists and Backup - Your Windows Services");
-            Console.WriteLine("2 - BlackViper - Safe for Desktop");
-            Console.WriteLine("3 - BlackViper - Safe for Laptop or Tablet");
-            Console.WriteLine("4 - BlackViper - Tweaked for Desktop");
-            Console.WriteLine("5 - DEFAULT - Windows 10 [HOME]");
-            Console.WriteLine("6 - DEFAULT - Windows 10 [PRO]");
-            Console.WriteLine("7 - Restore client Backup");
+            Console.WriteLine("2 - DEFAULT - Windows 8.1 [HOME]");
+            Console.WriteLine("3 - DEFAULT - Windows 8.1 [PRO]");
+            Console.WriteLine("4 - DEFAULT - Windows 8.1 [ENTERPRISE]");
+            Console.WriteLine("5 - BlackViper - Safe");
+            Console.WriteLine("6 - Restore client Backup");
             Console.WriteLine("0 - Exit");
 
             Console.Write($"{Environment.NewLine}Select an option: ");
@@ -28,7 +27,7 @@ namespace ServiceOptimizer.Classes
 
         public void loadJSON(ref List<BlackViperModel> listWin10)
         {
-            string sourceFile = @"ConfigJSON.json";
+            string sourceFile = @"ConfigJSON_w81.json";
             listWin10 = JsonConvert.DeserializeObject<List<BlackViperModel>>(File.ReadAllText(sourceFile));
         }
 
@@ -92,15 +91,15 @@ namespace ServiceOptimizer.Classes
                     nameService = item.Service_Name;
                 }
 
-                if (item.DEFAULT_Windows_10_Home != null && item.DEFAULT_Windows_10_Home.Contains("Manual"))
+                if (item.DEFAULT_Windows81 != null && item.DEFAULT_Windows81.Contains("Manual"))
                 {
                     ServicosWin.ChangeStartMode(nameService, System.ServiceProcess.ServiceStartMode.Manual);
                 }
-                else if (item.DEFAULT_Windows_10_Home != null && item.DEFAULT_Windows_10_Home.Contains("Automatic"))
+                else if (item.DEFAULT_Windows81 != null && item.DEFAULT_Windows81.Contains("Automatic"))
                 {
                     ServicosWin.ChangeStartMode(nameService, System.ServiceProcess.ServiceStartMode.Automatic);
                 }
-                else if (item.DEFAULT_Windows_10_Home != null && item.DEFAULT_Windows_10_Home.Contains("Disabled"))
+                else if (item.DEFAULT_Windows81 != null && item.DEFAULT_Windows81.Contains("Disabled"))
                 {
                     ServicosWin.ChangeStartMode(nameService, System.ServiceProcess.ServiceStartMode.Disabled);
                 }
@@ -126,15 +125,15 @@ namespace ServiceOptimizer.Classes
                     nameService = item.Service_Name;
                 }
 
-                if (item.DEFAULT_Windows_10_Pro != null && item.DEFAULT_Windows_10_Pro.Contains("Manual"))
+                if (item.DEFAULT_Windows81_Pro != null && item.DEFAULT_Windows81_Pro.Contains("Manual"))
                 {
                     ServicosWin.ChangeStartMode(nameService, System.ServiceProcess.ServiceStartMode.Manual);
                 }
-                else if (item.DEFAULT_Windows_10_Pro != null && item.DEFAULT_Windows_10_Pro.Contains("Automatic"))
+                else if (item.DEFAULT_Windows81_Pro != null && item.DEFAULT_Windows81_Pro.Contains("Automatic"))
                 {
                     ServicosWin.ChangeStartMode(nameService, System.ServiceProcess.ServiceStartMode.Automatic);
                 }
-                else if (item.DEFAULT_Windows_10_Pro != null && item.DEFAULT_Windows_10_Pro.Contains("Disabled"))
+                else if (item.DEFAULT_Windows81_Pro != null && item.DEFAULT_Windows81_Pro.Contains("Disabled"))
                 {
                     ServicosWin.ChangeStartMode(nameService, System.ServiceProcess.ServiceStartMode.Disabled);
                 }
@@ -146,7 +145,7 @@ namespace ServiceOptimizer.Classes
             op = 0;
         }
 
-        public void setBlackViper_SafeForDesktop(ref byte op, List<BlackViperModel> listWin10)
+        public void setDefault_WindowsEnterprise(ref byte op, List<BlackViperModel> listWin10)
         {
             foreach (BlackViperModel item in listWin10)
             {
@@ -160,15 +159,15 @@ namespace ServiceOptimizer.Classes
                     nameService = item.Service_Name;
                 }
 
-                if (item.Safe_Desktop != null && item.Safe_Desktop.Contains("Manual"))
+                if (item.DEFAULT_Windows81_Enterprise != null && item.DEFAULT_Windows81_Enterprise.Contains("Manual"))
                 {
                     ServicosWin.ChangeStartMode(nameService, System.ServiceProcess.ServiceStartMode.Manual);
                 }
-                else if (item.Safe_Desktop != null && item.Safe_Desktop.Contains("Automatic"))
+                else if (item.DEFAULT_Windows81_Enterprise != null && item.DEFAULT_Windows81_Enterprise.Contains("Automatic"))
                 {
                     ServicosWin.ChangeStartMode(nameService, System.ServiceProcess.ServiceStartMode.Automatic);
                 }
-                else if (item.Safe_Desktop != null && item.Safe_Desktop.Contains("Disabled"))
+                else if (item.DEFAULT_Windows81_Enterprise != null && item.DEFAULT_Windows81_Enterprise.Contains("Disabled"))
                 {
                     ServicosWin.ChangeStartMode(nameService, System.ServiceProcess.ServiceStartMode.Disabled);
                 }
@@ -180,7 +179,7 @@ namespace ServiceOptimizer.Classes
             op = 0;
         }
 
-        public void setBlackViper_SafeForLaptopOrTablet(ref byte op, List<BlackViperModel> listWin10)
+        public void setBlackViper_Safe(ref byte op, List<BlackViperModel> listWin10)
         {
             foreach (BlackViperModel item in listWin10)
             {
@@ -194,49 +193,15 @@ namespace ServiceOptimizer.Classes
                     nameService = item.Service_Name;
                 }
 
-                if (item.Safe_Desktop != null && item.Safe_Mobile.Contains("Manual"))
+                if (item.Safe != null && item.Safe.Contains("Manual"))
                 {
                     ServicosWin.ChangeStartMode(nameService, System.ServiceProcess.ServiceStartMode.Manual);
                 }
-                else if (item.Safe_Desktop != null && item.Safe_Mobile.Contains("Automatic"))
+                else if (item.Safe != null && item.Safe.Contains("Automatic"))
                 {
                     ServicosWin.ChangeStartMode(nameService, System.ServiceProcess.ServiceStartMode.Automatic);
                 }
-                else if (item.Safe_Desktop != null && item.Safe_Mobile.Contains("Disabled"))
-                {
-                    ServicosWin.ChangeStartMode(nameService, System.ServiceProcess.ServiceStartMode.Disabled);
-                }
-                else
-                {
-                    Console.WriteLine("SVC_NAME: {0} Não Configurado ou Instalado.", (String.IsNullOrEmpty(nameService) ? "Null" : nameService));
-                }
-            }
-            op = 0;
-        }
-
-        public void setBlackViper_TweakedForDesktop(ref byte op, List<BlackViperModel> listWin10)
-        {
-            foreach (BlackViperModel item in listWin10)
-            {
-                string nameService = String.Empty;
-                if (item.Service_Name != null && item.Service_Name.Contains("_"))
-                {
-                    nameService = item.Service_Name.Split('_')[0];
-                }
-                else
-                {
-                    nameService = item.Service_Name;
-                }
-
-                if (item.Safe_Desktop != null && item.Tweaked_Desktop.Contains("Manual"))
-                {
-                    ServicosWin.ChangeStartMode(nameService, System.ServiceProcess.ServiceStartMode.Manual);
-                }
-                else if (item.Safe_Desktop != null && item.Tweaked_Desktop.Contains("Automatic"))
-                {
-                    ServicosWin.ChangeStartMode(nameService, System.ServiceProcess.ServiceStartMode.Automatic);
-                }
-                else if (item.Safe_Desktop != null && item.Tweaked_Desktop.Contains("Disabled"))
+                else if (item.Safe != null && item.Safe.Contains("Disabled"))
                 {
                     ServicosWin.ChangeStartMode(nameService, System.ServiceProcess.ServiceStartMode.Disabled);
                 }

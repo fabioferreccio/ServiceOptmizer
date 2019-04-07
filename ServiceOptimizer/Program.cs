@@ -142,6 +142,48 @@ namespace ServiceOptimizer
                         } while (op != 0);
                         json_isLoaded = false;
                         break;
+                    case 3:
+                        do
+                        {
+                            Windows8 referencia = new Windows8(ref op);
+                            if (!json_isLoaded)
+                            {
+                                referencia.loadJSON(ref list);
+                                json_isLoaded = true;
+                            }
+
+                            switch (op)
+                            {
+                                case 1:
+                                    referencia.listAndBackup_WindowsServices(ref op);
+                                    break;
+                                case 2:
+                                    referencia.setDefault_WindowsHome(ref op, list);
+                                    break;
+                                case 3:
+                                    referencia.setDefault_WindowsPro(ref op, list);
+                                    break;
+                                case 4:
+                                    referencia.setDefault_WindowsEnterprise(ref op, list);
+                                    break;
+                                case 5:
+                                    referencia.setBlackViper_Safe(ref op, list);
+                                    break;
+                                case 6:
+                                    referencia.loadJSON(ref listUser);
+                                    referencia.Restore_WindowsServiceBackup(ref op, listUser);
+                                    break;
+                            }
+
+                            if (op != 255 && op != 0)
+                            {
+                                Console.WriteLine($"{Environment.NewLine}{"".PadRight(105, '*')}");
+                                Console.WriteLine($"{Environment.NewLine} Processo Finalizado!");
+                                System.Threading.Thread.Sleep(5000);
+                            }
+                        } while (op != 0);
+                        json_isLoaded = false;
+                        break;
                     default:
                         Console.WriteLine("Not Yet implemented, Sorry!!");
                         System.Threading.Thread.Sleep(5000);
